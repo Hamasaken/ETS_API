@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: ETScript Documentation
 ---
 
 This is the public documentation and API for ETS.
