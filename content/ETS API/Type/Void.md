@@ -1,0 +1,1 @@
+"Void" is the representation of a lack of return type for [[Function|functions]]. It is not an actual [[Type]].
