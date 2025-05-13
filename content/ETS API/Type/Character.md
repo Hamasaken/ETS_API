@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: Character
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -33,6 +38,7 @@
 | [[Character#ChangeStat():Void\|ChangeStat()]] | [[Void]] |  | |
 | [[Character#IsAlly():Bool\|IsAlly()]] | [[Bool]] |  | |
 | [[Character#IsEnemy():Bool\|IsEnemy()]] | [[Bool]] |  | |
+
 
 ### Is() : [[Bool]]
 Placeholder description.

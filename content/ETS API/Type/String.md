@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: String
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -15,6 +20,7 @@
 | [[String#Substring():String\|Substring()]] | [[String]] |  | |
 | [[String#Replace():String\|Replace()]] | [[String]] |  | |
 | [[String#Split():List<String>\|Split()]] | [[List]]<[[String]]> |  | |
+
 
 ### Length() : [[Int]]
 Placeholder description.

@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: CombatEffectInstance
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -21,6 +26,7 @@
 | [[CombatEffectInstance#WaitForAnimation():Void\|WaitForAnimation()]] | [[Void]] |  | |
 | [[CombatEffectInstance#WaitForProjectiles():Void\|WaitForProjectiles()]] | [[Void]] |  | |
 | [[CombatEffectInstance#SelectTargets():Void\|SelectTargets()]] | [[Void]] |  | |
+
 
 ### ScaledDamage() : [[Damage]]
 Placeholder description.

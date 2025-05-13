@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: ECharacterEvent
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -11,6 +16,7 @@
 | Name | Return type | Parameters | Description |
 | ---- | ----------- | ---------- | ----------- |
 | [[ECharacterEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+
 
 ### Stop() : [[Void]]
 Placeholder description.

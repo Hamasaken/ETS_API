@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: EEvent
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -10,6 +15,7 @@
 | Name | Return type | Parameters | Description |
 | ---- | ----------- | ---------- | ----------- |
 | [[EEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+
 
 ### Stop() : [[Void]]
 Placeholder description.

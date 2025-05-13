@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: CharacterVisuals
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -16,6 +21,7 @@
 | [[CharacterVisuals#AddEvent():Void\|AddEvent()]] | [[Void]] |  | |
 | [[CharacterVisuals#SetEnd():Void\|SetEnd()]] | [[Void]] |  | |
 | [[CharacterVisuals#UpdateImage():Void\|UpdateImage()]] | [[Void]] |  | |
+
 
 ### GetCenterPosition() : [[Vector3D]]
 Placeholder description.

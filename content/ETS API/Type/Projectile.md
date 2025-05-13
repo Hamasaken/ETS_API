@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: Projectile
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -9,6 +14,7 @@
 | Name | Return type | Parameters | Description |
 | ---- | ----------- | ---------- | ----------- |
 | [[Projectile#AddTrail():Projectile\|AddTrail()]] | [[Projectile]] |  | |
+
 
 ### AddTrail() : [[Projectile]]
 Placeholder description.

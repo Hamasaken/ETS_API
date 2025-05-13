@@ -1,4 +1,7 @@
-#ClassEnum
+---
+tags:
+- ClassEnum
+---
 
 Placeholder description for AttackType.
 

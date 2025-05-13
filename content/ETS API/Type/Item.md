@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: Item
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -11,6 +16,7 @@
 | [[Item#AddListener():Void\|AddListener()]] | [[Void]] |  | |
 | [[Item#RemoveListener():Void\|RemoveListener()]] | [[Void]] |  | |
 | [[Item#ClearListeners():Void\|ClearListeners()]] | [[Void]] |  | |
+
 
 ### CreateListener() : [[EventListener]]
 Placeholder description.

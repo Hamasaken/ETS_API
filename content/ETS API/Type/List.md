@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: List
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -14,6 +19,7 @@
 | [[List#Remove():Void\|Remove()]] | [[Void]] |  | |
 | [[List#Contains():Bool\|Contains()]] | [[Bool]] |  | |
 | [[List#IndexOf():Int\|IndexOf()]] | [[Int]] |  | |
+
 
 ### Count() : [[Int]]
 Placeholder description.

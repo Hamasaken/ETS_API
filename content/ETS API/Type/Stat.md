@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: Stat
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -8,14 +13,15 @@
 | Max | [[Int]] | False | |
 
 ## Functions
-| Name | Parameters | Description |
-| ---- | ---------- | ----------- |
-| [[Stat#Add():Void\|Add()]] | [[Void]] | [[Void]] |  |  |
-| [[Stat#AddMax():Void\|AddMax()]] | [[Void]] | [[Void]] |  |  |
-| [[Stat#Remove():Void\|Remove()]] | [[Void]] | [[Void]] |  |  |
-| [[Stat#RemoveMax():Void\|RemoveMax()]] | [[Void]] | [[Void]] |  |  |
-| [[Stat#Restore():Void\|Restore()]] | [[Void]] | [[Void]] |  |  |
-| [[Stat#GetPercent():Float\|GetPercent()]] | [[Float]] | [[Float]] |  |  |
+| Name | Return type | Parameters | Description |
+| ---- | ----------- | ---------- | ----------- |
+| [[Stat#Add():Void\|Add()]] | [[Void]] |  | |
+| [[Stat#AddMax():Void\|AddMax()]] | [[Void]] |  | |
+| [[Stat#Remove():Void\|Remove()]] | [[Void]] |  | |
+| [[Stat#RemoveMax():Void\|RemoveMax()]] | [[Void]] |  | |
+| [[Stat#Restore():Void\|Restore()]] | [[Void]] |  | |
+| [[Stat#GetPercent():Float\|GetPercent()]] | [[Float]] |  | |
+
 
 ### Add() : [[Void]]
 Placeholder description.

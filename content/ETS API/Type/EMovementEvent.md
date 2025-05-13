@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: EMovementEvent
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -12,6 +17,7 @@
 | Name | Return type | Parameters | Description |
 | ---- | ----------- | ---------- | ----------- |
 | [[EMovementEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+
 
 ### Stop() : [[Void]]
 Placeholder description.

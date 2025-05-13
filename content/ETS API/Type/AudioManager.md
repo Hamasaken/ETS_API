@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: SoundManager
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -13,6 +18,7 @@
 | [[AudioManager#ChangeAmbience():Void\|ChangeAmbience()]] | [[Void]] |  | |
 | [[AudioManager#PlaySound():Void\|PlaySound()]] | [[Void]] |  | |
 | [[AudioManager#PlaySoundAt():Void\|PlaySoundAt()]] | [[Void]] |  | |
+
 
 ### StopMusic() : [[Void]]
 Placeholder description.

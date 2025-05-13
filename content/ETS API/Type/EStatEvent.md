@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: EStatEvent
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -14,6 +19,7 @@
 | Name | Return type | Parameters | Description |
 | ---- | ----------- | ---------- | ----------- |
 | [[EStatEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+
 
 ### Stop() : [[Void]]
 Placeholder description.

@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: CombatEffect
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -12,6 +17,7 @@
 | Name | Return type | Parameters | Description |
 | ---- | ----------- | ---------- | ----------- |
 | [[CombatEffect#ScaledDamage():Damage\|ScaledDamage()]] | [[Damage]] |  | |
+
 
 ### ScaledDamage() : [[Damage]]
 Placeholder description.

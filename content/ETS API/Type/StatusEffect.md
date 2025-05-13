@@ -1,8 +1,13 @@
-#ScriptObject #EventAware
+---
+title: StatusEffect
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
-| Name        | Type       | Readonly | Description |
-| ----------- | ---------- | -------- | ----------- |
+| Name | Type | Readonly | Description |
+| ---- | ---- | -------- | ----------- |
 | id | [[String]] | False | |
 | name | [[String]] | False | |
 | image | [[String]] | False | |
@@ -11,8 +16,8 @@
 | value | [[Int]] | False | |
 
 ## Functions
-| Name                                                                  | Return type | Parameters | Description |
-| --------------------------------------------------------------------- | ----------- | ---------- | ----------- |
+| Name | Return type | Parameters | Description |
+| ---- | ----------- | ---------- | ----------- |
 | [[StatusEffect#CreateListener():EventListener\|CreateListener()]] | [[EventListener]] |  | |
 | [[StatusEffect#AddListener():Void\|AddListener()]] | [[Void]] |  | |
 | [[StatusEffect#RemoveListener():Void\|RemoveListener()]] | [[Void]] |  | |
@@ -23,6 +28,7 @@
 | [[StatusEffect#OnApply():Any\|OnApply()]] | [[Any]] |  | |
 | [[StatusEffect#OnRemove():Any\|OnRemove()]] | [[Any]] |  | |
 | [[StatusEffect#OnTick():Any\|OnTick()]] | [[Any]] |  | |
+
 
 ### CreateListener() : [[EventListener]]
 Placeholder description.

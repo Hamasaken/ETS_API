@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: Targeting
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -18,6 +23,7 @@
 | ---- | ----------- | ---------- | ----------- |
 | [[Targeting#CanTarget():Bool\|CanTarget()]] | [[Bool]] |  | |
 | [[Targeting#CanTargetT():Bool\|CanTargetT()]] | [[Bool]] |  | |
+
 
 ### CanTarget() : [[Bool]]
 Placeholder description.

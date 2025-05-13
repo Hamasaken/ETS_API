@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: EItemEvent
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -13,6 +18,7 @@
 | Name | Return type | Parameters | Description |
 | ---- | ----------- | ---------- | ----------- |
 | [[EItemEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+
 
 ### Stop() : [[Void]]
 Placeholder description.

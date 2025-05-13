@@ -1,4 +1,9 @@
-#ScriptObject
+---
+title: EventListener
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -11,6 +16,7 @@
 | ---- | ----------- | ---------- | ----------- |
 | [[EventListener#If():Any\|If()]] | [[Any]] |  | |
 | [[EventListener#Do():Any\|Do()]] | [[Any]] |  | |
+
 
 ### If() : [[Any]]
 Placeholder description.

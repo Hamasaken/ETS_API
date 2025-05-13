@@ -1,4 +1,9 @@
-#ScriptObject #EventAware 
+---
+title: Trait
+draft: false
+tags:
+- ScriptObject
+---
 
 ## Variables
 | Name | Type | Readonly | Description |
@@ -11,6 +16,7 @@
 | [[Trait#AddListener():Void\|AddListener()]] | [[Void]] |  | |
 | [[Trait#RemoveListener():Void\|RemoveListener()]] | [[Void]] |  | |
 | [[Trait#ClearListeners():Void\|ClearListeners()]] | [[Void]] |  | |
+
 
 ### CreateListener() : [[EventListener]]
 Placeholder description.
