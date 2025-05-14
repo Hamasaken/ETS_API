@@ -1,3 +1,10 @@
+---
+title: TraitGroup
+draft: false
+tags:
+ - ClassEnum
+---
+
 Placeholder description for TraitGroup.
 
 ## Values

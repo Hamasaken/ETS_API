@@ -1,3 +1,10 @@
+---
+title: Team
+draft: false
+tags:
+ - ClassEnum
+---
+
 Placeholder description for Team.
 
 ## Values

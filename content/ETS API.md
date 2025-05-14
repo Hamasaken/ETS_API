@@ -1,3 +1,10 @@
+---
+title: ETS API
+draft: false
+aliases:
+ - API
+---
+
 This is the scripting documentation for ETS (Endless Tides Script).
 
 
@@ -7,13 +14,4 @@ This is the scripting documentation for ETS (Endless Tides Script).
 - **[[Type]]**
 
 %% End Waypoint %%
-
-
-## Overview
-
-
-```ccard
-type: folder_brief_live
-```
-
 

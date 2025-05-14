@@ -1,4 +1,9 @@
-#ClassEnum
+---
+title: DamageType
+draft: false
+tags:
+ - ClassEnum
+---
 
 Damage types represent different kinds of elements for the abilities in the game. Certain characters might have immunities or weaknesses to various damage types.
 

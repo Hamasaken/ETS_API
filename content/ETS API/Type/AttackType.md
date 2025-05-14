@@ -1,6 +1,8 @@
 ---
+title: AttackType
+draft: false
 tags:
-- ClassEnum
+ - ClassEnum
 ---
 
 Placeholder description for AttackType.
@@ -9,6 +11,6 @@ Placeholder description for AttackType.
 ## Values
 | Id  | Name    | Description |
 | --- | ------- | ----------- |
-| 0 | Melee  |  |
-| 1 | Ranged  |  |
-| 2 | Magical  |  |
+| 0   | Melee   |             |
+| 1   | Ranged  |             |
+| 2   | Magical |             |

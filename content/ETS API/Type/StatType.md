@@ -1,3 +1,10 @@
+---
+title: StatType
+draft: false
+tags:
+ - ClassEnum
+---
+
 Placeholder description for StatType.
 
 ## Values

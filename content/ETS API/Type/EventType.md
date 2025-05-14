@@ -1,4 +1,9 @@
-#ClassEnum 
+---
+title: EventType
+draft: false
+tags:
+ - ClassEnum
+---
 
 Some gameplay effects raise events when they occur. It is possible to listen for these types of events by creating an [[EventListener]], and running a triggered [[Function]] in response to them. An [[EventListener]] needs to be assigned a single [[EventType]] to listen for. When an event of the matching type is raised, the listener will trigger.
 

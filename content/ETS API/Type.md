@@ -1,3 +1,14 @@
+---
+title: Type
+draft: false
+tags:
+ - ClassEnum
+aliases:
+ - Types
+ - VariableType
+ - VariableTypes
+---
+
 ETScript is a softly typed scripting language. Behind the scenes, all of the data is handled as C# objects and classes, wrapped into a selection of "ETS types".
 
 > [!Note]

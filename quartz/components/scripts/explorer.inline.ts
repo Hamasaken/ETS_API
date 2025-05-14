@@ -1,5 +1,5 @@
 import { FileTrieNode } from "../../util/fileTrie"
-import { FullSlug, resolveRelative, simplifySlug } from "../../util/path"
+import { FullSlug, resolveRelative, simplifySlug, stripSlashes } from "../../util/path"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
 
 type MaybeHTMLElement = HTMLElement | undefined
@@ -116,6 +116,9 @@ function createFolderNode(
     const button = titleContainer.querySelector(".folder-button") as HTMLElement
     const a = document.createElement("a")
     a.href = resolveRelative(currentSlug, folderPath)
+    if (node.data != null) {
+      a.href = stripSlashes(a.href)
+    }
     a.dataset.for = folderPath
     a.className = "folder-title"
     a.textContent = node.displayName

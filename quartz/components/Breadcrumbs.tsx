@@ -1,6 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import breadcrumbsStyle from "./styles/breadcrumbs.scss"
-import { FullSlug, SimpleSlug, resolveRelative, simplifySlug } from "../util/path"
+import { FullSlug, SimpleSlug, resolveRelative, simplifySlug, stripSlashes } from "../util/path"
 import { classNames } from "../util/lang"
 import { trieFromAllFiles } from "../util/ctx"
 
@@ -67,6 +67,8 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       // For last node (current page), set empty path
       if (idx === pathNodes.length - 1) {
         crumb.path = ""
+      } else if (node.data != null) {
+        crumb.path = stripSlashes(crumb.path);
       }
 
       return crumb

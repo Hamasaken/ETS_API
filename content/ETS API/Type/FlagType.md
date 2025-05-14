@@ -1,3 +1,10 @@
+---
+title: FlagType
+draft: false
+tags:
+ - ClassEnum
+---
+
 Placeholder description for FlagType.
 
 
