@@ -2,23 +2,27 @@
 title: EHealingEvent
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| type | [[EventType]] | True | |
-| stopped | [[Bool]] | True | |
-| c | [[Character]] | False | |
-| health | [[Int]] | False | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| type | [[EventType]] | True |  |
+| stopped | [[Bool]] | True |  |
+| c | [[Character]] | False |  |
+| health | [[Int]] | False |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[EHealingEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[EHealingEvent#^stop\|Stop()]] | [[Void]] |  |  |
 
+### Stop () : [[Void]]
 
-### Stop() : [[Void]]
-Placeholder description.
+^stop
+
+Description goes here.
 

@@ -2,51 +2,105 @@
 title: CharacterVisuals
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[CharacterVisuals#GetCenterPosition():Vector3D\|GetCenterPosition()]] | [[Vector3D]] |  | |
-| [[CharacterVisuals#GetPosition():Vector3D\|GetPosition()]] | [[Vector3D]] |  | |
-| [[CharacterVisuals#FaceTowards():Void\|FaceTowards()]] | [[Void]] |  | |
-| [[CharacterVisuals#FaceTowardsC():Void\|FaceTowardsC()]] | [[Void]] |  | |
-| [[CharacterVisuals#FloatingText():Void\|FloatingText()]] | [[Void]] |  | |
-| [[CharacterVisuals#PlayAnimation():Void\|PlayAnimation()]] | [[Void]] |  | |
-| [[CharacterVisuals#AddEvent():Void\|AddEvent()]] | [[Void]] |  | |
-| [[CharacterVisuals#SetEnd():Void\|SetEnd()]] | [[Void]] |  | |
-| [[CharacterVisuals#UpdateImage():Void\|UpdateImage()]] | [[Void]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[CharacterVisuals#^getcenterposition\|GetCenterPosition()]] | [[Vector3D]] |  |  |
+| [[CharacterVisuals#^getposition\|GetPosition()]] | [[Vector3D]] |  |  |
+| [[CharacterVisuals#^facetowards\|FaceTowards()]] | [[Void]] | [[GridItem]] position |  |
+| [[CharacterVisuals#^facetowardsc\|FaceTowardsC()]] | [[Void]] | [[Character]] target |  |
+| [[CharacterVisuals#^floatingtext\|FloatingText()]] | [[Void]] | [[String]] text, [[String]] style |  |
+| [[CharacterVisuals#^playanimation\|PlayAnimation()]] | [[Void]] | [[String]] animation, [[Function]] callback |  |
+| [[CharacterVisuals#^addevent\|AddEvent()]] | [[Void]] | [[Function]] callback |  |
+| [[CharacterVisuals#^setend\|SetEnd()]] | [[Void]] | [[Function]] callback |  |
+| [[CharacterVisuals#^updateimage\|UpdateImage()]] | [[Void]] |  |  |
 
+### GetCenterPosition () : [[Vector3D]]
 
-### GetCenterPosition() : [[Vector3D]]
-Placeholder description.
+^getcenterposition
 
-### GetPosition() : [[Vector3D]]
-Placeholder description.
+Description goes here.
 
-### FaceTowards() : [[Void]]
-Placeholder description.
+> [!Success]+ Return value
+> Returns a [[Vector3D]].
 
-### FaceTowardsC() : [[Void]]
-Placeholder description.
+### GetPosition () : [[Vector3D]]
 
-### FloatingText() : [[Void]]
-Placeholder description.
+^getposition
 
-### PlayAnimation() : [[Void]]
-Placeholder description.
+Description goes here.
 
-### AddEvent() : [[Void]]
-Placeholder description.
+> [!Success]+ Return value
+> Returns a [[Vector3D]].
 
-### SetEnd() : [[Void]]
-Placeholder description.
+### FaceTowards ([[GridItem]] position) : [[Void]]
 
-### UpdateImage() : [[Void]]
-Placeholder description.
+^facetowards
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `position` This is a parameter.
+
+### FaceTowardsC ([[Character]] target) : [[Void]]
+
+^facetowardsc
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `target` This is a parameter.
+
+### FloatingText ([[String]] text, [[String]] style) : [[Void]]
+
+^floatingtext
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `text` This is a parameter.
+> 2. `style` This is a parameter.
+
+### PlayAnimation ([[String]] animation, [[Function]] callback) : [[Void]]
+
+^playanimation
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `animation` This is a parameter.
+> 2. `callback` This is a parameter.
+
+### AddEvent ([[Function]] callback) : [[Void]]
+
+^addevent
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `callback` This is a parameter.
+
+### SetEnd ([[Function]] callback) : [[Void]]
+
+^setend
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `callback` This is a parameter.
+
+### UpdateImage () : [[Void]]
+
+^updateimage
+
+Description goes here.
 

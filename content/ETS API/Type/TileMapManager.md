@@ -1,16 +1,17 @@
 ---
-title: CombatManager
+title: TileMapManager
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
 

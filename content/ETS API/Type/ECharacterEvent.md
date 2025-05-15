@@ -2,22 +2,26 @@
 title: ECharacterEvent
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| type | [[EventType]] | True | |
-| stopped | [[Bool]] | True | |
-| c | [[Character]] | False | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| type | [[EventType]] | True |  |
+| stopped | [[Bool]] | True |  |
+| c | [[Character]] | False |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[ECharacterEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[ECharacterEvent#^stop\|Stop()]] | [[Void]] |  |  |
 
+### Stop () : [[Void]]
 
-### Stop() : [[Void]]
-Placeholder description.
+^stop
+
+Description goes here.
 

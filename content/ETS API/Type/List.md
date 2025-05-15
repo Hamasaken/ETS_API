@@ -2,43 +2,93 @@
 title: List
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[List#Count():Int\|Count()]] | [[Int]] |  | |
-| [[List#Clear():Void\|Clear()]] | [[Void]] |  | |
-| [[List#Insert():Void\|Insert()]] | [[Void]] |  | |
-| [[List#Add():Int\|Add()]] | [[Int]] |  | |
-| [[List#Remove():Void\|Remove()]] | [[Void]] |  | |
-| [[List#Contains():Bool\|Contains()]] | [[Bool]] |  | |
-| [[List#IndexOf():Int\|IndexOf()]] | [[Int]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[List#^count\|Count()]] | [[Int]] |  |  |
+| [[List#^clear\|Clear()]] | [[Void]] |  |  |
+| [[List#^insert\|Insert()]] | [[Void]] | [[Int]] index, [[Any]] object |  |
+| [[List#^add\|Add()]] | [[Int]] | [[Any]] object |  |
+| [[List#^remove\|Remove()]] | [[Void]] | [[Any]] object |  |
+| [[List#^contains\|Contains()]] | [[Bool]] | [[Any]] object |  |
+| [[List#^indexof\|IndexOf()]] | [[Int]] | [[Any]] object |  |
 
+### Count () : [[Int]]
 
-### Count() : [[Int]]
-Placeholder description.
+^count
 
-### Clear() : [[Void]]
-Placeholder description.
+Description goes here.
 
-### Insert() : [[Void]]
-Placeholder description.
+> [!Success]+ Return value
+> Returns a [[Int]].
 
-### Add() : [[Int]]
-Placeholder description.
+### Clear () : [[Void]]
 
-### Remove() : [[Void]]
-Placeholder description.
+^clear
 
-### Contains() : [[Bool]]
-Placeholder description.
+Description goes here.
 
-### IndexOf() : [[Int]]
-Placeholder description.
+### Insert ([[Int]] index, [[Any]] object) : [[Void]]
+
+^insert
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `index` This is a parameter.
+> 2. `object` This is a parameter.
+
+### Add ([[Any]] object) : [[Int]]
+
+^add
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `object` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Int]].
+
+### Remove ([[Any]] object) : [[Void]]
+
+^remove
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `object` This is a parameter.
+
+### Contains ([[Any]] object) : [[Bool]]
+
+^contains
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `object` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### IndexOf ([[Any]] object) : [[Int]]
+
+^indexof
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `object` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Int]].
 

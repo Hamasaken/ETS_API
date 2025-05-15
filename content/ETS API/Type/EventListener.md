@@ -2,25 +2,41 @@
 title: EventListener
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| type | [[EventType]] | True | |
-| priority | [[Int]] | False | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| type | [[EventType]] | True |  |
+| priority | [[Int]] | False |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[EventListener#If():Any\|If()]] | [[Any]] |  | |
-| [[EventListener#Do():Any\|Do()]] | [[Any]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[EventListener#^if\|If()]] | [[Bool]] | [[EEvent]] e |  |
+| [[EventListener#^do\|Do()]] | [[Void]] | [[EEvent]] e |  |
 
+### If ([[EEvent]] e) : [[Bool]]
 
-### If() : [[Any]]
-Placeholder description.
+^if
 
-### Do() : [[Any]]
-Placeholder description.
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `e` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### Do ([[EEvent]] e) : [[Void]]
+
+^do
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `e` This is a parameter.
 

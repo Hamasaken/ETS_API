@@ -2,23 +2,27 @@
 title: EStatusEvent
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| type | [[EventType]] | True | |
-| stopped | [[Bool]] | True | |
-| c | [[Character]] | False | |
-| status | [[StatusEffect]] | False | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| type | [[EventType]] | True |  |
+| stopped | [[Bool]] | True |  |
+| c | [[Character]] | False |  |
+| status | [[StatusEffect]] | False |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[EStatusEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[EStatusEvent#^stop\|Stop()]] | [[Void]] |  |  |
 
+### Stop () : [[Void]]
 
-### Stop() : [[Void]]
-Placeholder description.
+^stop
+
+Description goes here.
 

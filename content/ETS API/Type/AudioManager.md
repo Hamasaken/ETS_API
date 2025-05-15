@@ -1,40 +1,74 @@
 ---
-title: SoundManager
+title: AudioManager
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[AudioManager#StopMusic():Void\|StopMusic()]] | [[Void]] |  | |
-| [[AudioManager#ChangeMusic():Void\|ChangeMusic()]] | [[Void]] |  | |
-| [[AudioManager#StopAmbience():Void\|StopAmbience()]] | [[Void]] |  | |
-| [[AudioManager#ChangeAmbience():Void\|ChangeAmbience()]] | [[Void]] |  | |
-| [[AudioManager#PlaySound():Void\|PlaySound()]] | [[Void]] |  | |
-| [[AudioManager#PlaySoundAt():Void\|PlaySoundAt()]] | [[Void]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[AudioManager#^stopmusic\|StopMusic()]] | [[Void]] |  |  |
+| [[AudioManager#^changemusic\|ChangeMusic()]] | [[Void]] | [[String]] sound |  |
+| [[AudioManager#^stopambience\|StopAmbience()]] | [[Void]] |  |  |
+| [[AudioManager#^changeambience\|ChangeAmbience()]] | [[Void]] | [[String]] sound |  |
+| [[AudioManager#^playsound\|PlaySound()]] | [[Void]] | [[String]] sound, [[Bool]] randomPitch |  |
+| [[AudioManager#^playsoundat\|PlaySoundAt()]] | [[Void]] | [[String]] sound, [[Vector3D]] position, [[Bool]] randomPitch |  |
 
+### StopMusic () : [[Void]]
 
-### StopMusic() : [[Void]]
-Placeholder description.
+^stopmusic
 
-### ChangeMusic() : [[Void]]
-Placeholder description.
+Description goes here.
 
-### StopAmbience() : [[Void]]
-Placeholder description.
+### ChangeMusic ([[String]] sound) : [[Void]]
 
-### ChangeAmbience() : [[Void]]
-Placeholder description.
+^changemusic
 
-### PlaySound() : [[Void]]
-Placeholder description.
+Description goes here.
 
-### PlaySoundAt() : [[Void]]
-Placeholder description.
+> [!Abstract]+ Parameters
+> 1. `sound` This is a parameter.
+
+### StopAmbience () : [[Void]]
+
+^stopambience
+
+Description goes here.
+
+### ChangeAmbience ([[String]] sound) : [[Void]]
+
+^changeambience
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `sound` This is a parameter.
+
+### PlaySound ([[String]] sound, [[Bool]] randomPitch) : [[Void]]
+
+^playsound
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `sound` This is a parameter.
+> 2. `randomPitch` This is a parameter.
+
+### PlaySoundAt ([[String]] sound, [[Vector3D]] position, [[Bool]] randomPitch) : [[Void]]
+
+^playsoundat
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `sound` This is a parameter.
+> 2. `position` This is a parameter.
+> 3. `randomPitch` This is a parameter.
 

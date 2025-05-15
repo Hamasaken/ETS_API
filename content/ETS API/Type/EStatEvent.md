@@ -2,25 +2,29 @@
 title: EStatEvent
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| type | [[EventType]] | True | |
-| stopped | [[Bool]] | True | |
-| c | [[Character]] | False | |
-| stat | [[StatType]] | False | |
-| action | [[StatAction]] | False | |
-| value | [[Int]] | False | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| type | [[EventType]] | True |  |
+| stopped | [[Bool]] | True |  |
+| c | [[Character]] | False |  |
+| stat | [[StatType]] | False |  |
+| action | [[StatAction]] | False |  |
+| value | [[Int]] | False |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[EStatEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[EStatEvent#^stop\|Stop()]] | [[Void]] |  |  |
 
+### Stop () : [[Void]]
 
-### Stop() : [[Void]]
-Placeholder description.
+^stop
+
+Description goes here.
 

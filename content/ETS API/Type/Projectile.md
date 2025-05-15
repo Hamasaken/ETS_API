@@ -2,20 +2,30 @@
 title: Projectile
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| speed | [[Float]] | False | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| speed | [[Float]] | False |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[Projectile#AddTrail():Projectile\|AddTrail()]] | [[Projectile]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[Projectile#^addtrail\|AddTrail()]] | [[IProjectile]] | [[Int]] id |  |
 
+### AddTrail ([[Int]] id) : [[IProjectile]]
 
-### AddTrail() : [[Projectile]]
-Placeholder description.
+^addtrail
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `id` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[IProjectile]].
 

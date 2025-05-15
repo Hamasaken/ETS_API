@@ -2,31 +2,57 @@
 title: Item
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[Item#CreateListener():EventListener\|CreateListener()]] | [[EventListener]] |  | |
-| [[Item#AddListener():Void\|AddListener()]] | [[Void]] |  | |
-| [[Item#RemoveListener():Void\|RemoveListener()]] | [[Void]] |  | |
-| [[Item#ClearListeners():Void\|ClearListeners()]] | [[Void]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[Item#^createlistener\|CreateListener()]] | [[EventListener]] | [[EventType]] event, [[Int]] priority |  |
+| [[Item#^addlistener\|AddListener()]] | [[Void]] | [[EventListener]] listener |  |
+| [[Item#^removelistener\|RemoveListener()]] | [[Void]] | [[EventListener]] listener |  |
+| [[Item#^clearlisteners\|ClearListeners()]] | [[Void]] |  |  |
 
+### CreateListener ([[EventType]] event, [[Int]] priority) : [[EventListener]]
 
-### CreateListener() : [[EventListener]]
-Placeholder description.
+^createlistener
 
-### AddListener() : [[Void]]
-Placeholder description.
+Description goes here.
 
-### RemoveListener() : [[Void]]
-Placeholder description.
+> [!Abstract]+ Parameters
+> 1. `event` This is a parameter.
+> 2. `priority` This is a parameter.
 
-### ClearListeners() : [[Void]]
-Placeholder description.
+> [!Success]+ Return value
+> Returns a [[EventListener]].
+
+### AddListener ([[EventListener]] listener) : [[Void]]
+
+^addlistener
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `listener` This is a parameter.
+
+### RemoveListener ([[EventListener]] listener) : [[Void]]
+
+^removelistener
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `listener` This is a parameter.
+
+### ClearListeners () : [[Void]]
+
+^clearlisteners
+
+Description goes here.
 

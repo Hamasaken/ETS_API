@@ -2,23 +2,30 @@
 title: CombatEffect
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| targeting | [[Targeting]] | False | |
-| attack | [[Attack]] | False | |
-| damage | [[Damage]] | False | |
-| scaling | [[StatScaling]] | False | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| targeting | [[Targeting]] | False |  |
+| attack | [[Attack]] | False |  |
+| damage | [[Damage]] | False |  |
+| scaling | [[StatScaling]] | False |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[CombatEffect#ScaledDamage():Damage\|ScaledDamage()]] | [[Damage]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[CombatEffect#^scaleddamage\|ScaledDamage()]] | [[Damage]] |  |  |
 
+### ScaledDamage () : [[Damage]]
 
-### ScaledDamage() : [[Damage]]
-Placeholder description.
+^scaleddamage
+
+Description goes here.
+
+> [!Success]+ Return value
+> Returns a [[Damage]].
 

@@ -2,21 +2,25 @@
 title: EEvent
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| type | [[EventType]] | True | |
-| stopped | [[Bool]] | True | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| type | [[EventType]] | True |  |
+| stopped | [[Bool]] | True |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[EEvent#Stop():Void\|Stop()]] | [[Void]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[EEvent#^stop\|Stop()]] | [[Void]] |  |  |
 
+### Stop () : [[Void]]
 
-### Stop() : [[Void]]
-Placeholder description.
+^stop
+
+Description goes here.
 

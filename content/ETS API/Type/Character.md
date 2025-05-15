@@ -2,104 +2,270 @@
 title: Character
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| id | [[String]] | False | |
-| name | [[String]] | False | |
-| visuals | [[CharacterVisuals]] | True | |
-| position | [[GridItem]] | False | |
-| team | [[Team]] | False | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| id | [[String]] | False |  |
+| name | [[String]] | False |  |
+| visuals | [[ICharacterVisuals]] | True |  |
+| position | [[GridItem]] | False |  |
+| team | [[Team]] | False |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-| [[Character#Is():Bool\|Is()]] | [[Bool]] |  | |
-| [[Character#SetFlag():Void\|SetFlag()]] | [[Void]] |  | |
-| [[Character#IsTrait():Bool\|IsTrait()]] | [[Bool]] |  | |
-| [[Character#HasTrait():Bool\|HasTrait()]] | [[Bool]] |  | |
-| [[Character#AddTrait():Void\|AddTrait()]] | [[Void]] |  | |
-| [[Character#RemoveTrait():Void\|RemoveTrait()]] | [[Void]] |  | |
-| [[Character#HasStat():Bool\|HasStat()]] | [[Bool]] |  | |
-| [[Character#Stat():Stat\|Stat()]] | [[Stat]] |  | |
-| [[Character#GetStat():Int\|GetStat()]] | [[Int]] |  | |
-| [[Character#SetStat():Void\|SetStat()]] | [[Void]] |  | |
-| [[Character#AddStatus():Bool\|AddStatus()]] | [[Bool]] |  | |
-| [[Character#RemoveStatus():Void\|RemoveStatus()]] | [[Void]] |  | |
-| [[Character#GetHitChance():Float\|GetHitChance()]] | [[Float]] |  | |
-| [[Character#GetEvadeChance():Float\|GetEvadeChance()]] | [[Float]] |  | |
-| [[Character#PerformAttack():Bool\|PerformAttack()]] | [[Bool]] |  | |
-| [[Character#TakeDamage():Void\|TakeDamage()]] | [[Void]] |  | |
-| [[Character#TakeDamage2():Void\|TakeDamage2()]] | [[Void]] |  | |
-| [[Character#HealDamage():Void\|HealDamage()]] | [[Void]] |  | |
-| [[Character#ChangeStat():Void\|ChangeStat()]] | [[Void]] |  | |
-| [[Character#IsAlly():Bool\|IsAlly()]] | [[Bool]] |  | |
-| [[Character#IsEnemy():Bool\|IsEnemy()]] | [[Bool]] |  | |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[Character#^is\|Is()]] | [[Bool]] | [[FlagType]] flag |  |
+| [[Character#^setflag\|SetFlag()]] | [[Void]] | [[FlagType]] flag, [[Bool]] value |  |
+| [[Character#^istrait\|IsTrait()]] | [[Bool]] | [[TraitType]] trait |  |
+| [[Character#^hastrait\|HasTrait()]] | [[Bool]] | [[TraitType]] trait |  |
+| [[Character#^addtrait\|AddTrait()]] | [[Void]] | [[TraitType]] trait |  |
+| [[Character#^removetrait\|RemoveTrait()]] | [[Void]] | [[TraitType]] trait |  |
+| [[Character#^hasstat\|HasStat()]] | [[Bool]] | [[StatType]] stat |  |
+| [[Character#^stat\|Stat()]] | [[Stat]] | [[StatType]] stat |  |
+| [[Character#^getstat\|GetStat()]] | [[Int]] | [[StatType]] stat |  |
+| [[Character#^setstat\|SetStat()]] | [[Void]] | [[StatType]] stat, [[Int]] value |  |
+| [[Character#^addstatus\|AddStatus()]] | [[Bool]] | [[StatusEffect]] status |  |
+| [[Character#^removestatus\|RemoveStatus()]] | [[Void]] | [[StatusEffect]] status |  |
+| [[Character#^gethitchance\|GetHitChance()]] | [[Float]] | [[Attack]] attack |  |
+| [[Character#^getevadechance\|GetEvadeChance()]] | [[Float]] |  |  |
+| [[Character#^performattack\|PerformAttack()]] | [[Bool]] | [[Character]] target, [[Attack]] attack, [[Damage]] damage |  |
+| [[Character#^takedamage\|TakeDamage()]] | [[Void]] | [[Damage]] damage |  |
+| [[Character#^takedamage2\|TakeDamage2()]] | [[Void]] | [[Damage]] damage |  |
+| [[Character#^healdamage\|HealDamage()]] | [[Void]] | [[Int]] value |  |
+| [[Character#^changestat\|ChangeStat()]] | [[Void]] | [[StatType]] stat, [[StatAction]] action, [[Int]] value |  |
+| [[Character#^isally\|IsAlly()]] | [[Bool]] | [[Character]] character |  |
+| [[Character#^isenemy\|IsEnemy()]] | [[Bool]] | [[Character]] character |  |
 
+### Is ([[FlagType]] flag) : [[Bool]]
 
-### Is() : [[Bool]]
-Placeholder description.
+^is
 
-### SetFlag() : [[Void]]
-Placeholder description.
+Description goes here.
 
-### IsTrait() : [[Bool]]
-Placeholder description.
+> [!Abstract]+ Parameters
+> 1. `flag` This is a parameter.
 
-### HasTrait() : [[Bool]]
-Placeholder description.
+> [!Success]+ Return value
+> Returns a [[Bool]].
 
-### AddTrait() : [[Void]]
-Placeholder description.
+### SetFlag ([[FlagType]] flag, [[Bool]] value) : [[Void]]
 
-### RemoveTrait() : [[Void]]
-Placeholder description.
+^setflag
 
-### HasStat() : [[Bool]]
-Placeholder description.
+Description goes here.
 
-### Stat() : [[Stat]]
-Placeholder description.
+> [!Abstract]+ Parameters
+> 1. `flag` This is a parameter.
+> 2. `value` This is a parameter.
 
-### GetStat() : [[Int]]
-Placeholder description.
+### IsTrait ([[TraitType]] trait) : [[Bool]]
 
-### SetStat() : [[Void]]
-Placeholder description.
+^istrait
 
-### AddStatus() : [[Bool]]
-Placeholder description.
+Description goes here.
 
-### RemoveStatus() : [[Void]]
-Placeholder description.
+> [!Abstract]+ Parameters
+> 1. `trait` This is a parameter.
 
-### GetHitChance() : [[Float]]
-Placeholder description.
+> [!Success]+ Return value
+> Returns a [[Bool]].
 
-### GetEvadeChance() : [[Float]]
-Placeholder description.
+### HasTrait ([[TraitType]] trait) : [[Bool]]
 
-### PerformAttack() : [[Bool]]
-Placeholder description.
+^hastrait
 
-### TakeDamage() : [[Void]]
-Placeholder description.
+Description goes here.
 
-### TakeDamage2() : [[Void]]
-Placeholder description.
+> [!Abstract]+ Parameters
+> 1. `trait` This is a parameter.
 
-### HealDamage() : [[Void]]
-Placeholder description.
+> [!Success]+ Return value
+> Returns a [[Bool]].
 
-### ChangeStat() : [[Void]]
-Placeholder description.
+### AddTrait ([[TraitType]] trait) : [[Void]]
 
-### IsAlly() : [[Bool]]
-Placeholder description.
+^addtrait
 
-### IsEnemy() : [[Bool]]
-Placeholder description.
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `trait` This is a parameter.
+
+### RemoveTrait ([[TraitType]] trait) : [[Void]]
+
+^removetrait
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `trait` This is a parameter.
+
+### HasStat ([[StatType]] stat) : [[Bool]]
+
+^hasstat
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `stat` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### Stat ([[StatType]] stat) : [[Stat]]
+
+^stat
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `stat` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Stat]].
+
+### GetStat ([[StatType]] stat) : [[Int]]
+
+^getstat
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `stat` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Int]].
+
+### SetStat ([[StatType]] stat, [[Int]] value) : [[Void]]
+
+^setstat
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `stat` This is a parameter.
+> 2. `value` This is a parameter.
+
+### AddStatus ([[StatusEffect]] status) : [[Bool]]
+
+^addstatus
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `status` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### RemoveStatus ([[StatusEffect]] status) : [[Void]]
+
+^removestatus
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `status` This is a parameter.
+
+### GetHitChance ([[Attack]] attack) : [[Float]]
+
+^gethitchance
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `attack` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Float]].
+
+### GetEvadeChance () : [[Float]]
+
+^getevadechance
+
+Description goes here.
+
+> [!Success]+ Return value
+> Returns a [[Float]].
+
+### PerformAttack ([[Character]] target, [[Attack]] attack, [[Damage]] damage) : [[Bool]]
+
+^performattack
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `target` This is a parameter.
+> 2. `attack` This is a parameter.
+> 3. `damage` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### TakeDamage ([[Damage]] damage) : [[Void]]
+
+^takedamage
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `damage` This is a parameter.
+
+### TakeDamage2 ([[Damage]] damage) : [[Void]]
+
+^takedamage2
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `damage` This is a parameter.
+
+### HealDamage ([[Int]] value) : [[Void]]
+
+^healdamage
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `value` This is a parameter.
+
+### ChangeStat ([[StatType]] stat, [[StatAction]] action, [[Int]] value) : [[Void]]
+
+^changestat
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `stat` This is a parameter.
+> 2. `action` This is a parameter.
+> 3. `value` This is a parameter.
+
+### IsAlly ([[Character]] character) : [[Bool]]
+
+^isally
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `character` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### IsEnemy ([[Character]] character) : [[Bool]]
+
+^isenemy
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `character` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
 

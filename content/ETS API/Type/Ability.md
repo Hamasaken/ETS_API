@@ -2,17 +2,18 @@
 title: Ability
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name | Type | Readonly | Description |
-| ---- | ---- | -------- | ----------- |
-| id | [[String]] | False | |
-| name | [[String]] | False | |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| id | [[String]] | False |  |
+| name | [[String]] | False |  |
 
 ## Functions
-| Name | Return type | Parameters | Description |
-| ---- | ----------- | ---------- | ----------- |
-
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
 

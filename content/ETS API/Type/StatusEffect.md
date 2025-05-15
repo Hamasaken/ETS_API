@@ -2,61 +2,114 @@
 title: StatusEffect
 draft: false
 tags:
-- ScriptObject
+ - ScriptObject
 ---
 
+Description goes here.
+
 ## Variables
-| Name        | Type       | Readonly | Description |
-| ----------- | ---------- | -------- | ----------- |
-| id          | [[String]] | False    |             |
-| name        | [[String]] | False    |             |
-| image       | [[String]] | False    |             |
-| description | [[String]] | False    |             |
-| duration    | [[Int]]    | False    |             |
-| value       | [[Int]]    | False    |             |
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| id | [[String]] | False |  |
+| name | [[String]] | False |  |
+| image | [[String]] | False |  |
+| description | [[String]] | False |  |
+| duration | [[Int]] | False |  |
+| value | [[Int]] | False |  |
+| OnRemove | [[Void]] | False |  |
+| OnTick | [[Void]] | False |  |
+
+^709a4f
+
 
 ## Functions
-| Name                                                     | Return type       | Parameters | Description |
-| -------------------------------------------------------- | ----------------- | ---------- | ----------- |
-| [[StatusEffect#^CreateListener\|CreateListener()]]       | [[EventListener]] |            |             |
-| [[StatusEffect#AddListener():Void\|AddListener()]]       | [[Void]]          |            |             |
-| [[StatusEffect#RemoveListener():Void\|RemoveListener()]] | [[Void]]          |            |             |
-| [[StatusEffect#ClearListeners():Void\|ClearListeners()]] | [[Void]]          |            |             |
-| [[StatusEffect#IsTrait():Bool\|IsTrait()]]               | [[Bool]]          |            |             |
-| [[StatusEffect#HasTrait():Bool\|HasTrait()]]             | [[Bool]]          |            |             |
-| [[StatusEffect#AddTrait():Void\|AddTrait()]]             | [[Void]]          |            |             |
-| [[StatusEffect#OnApply():Any\|OnApply()]]                | [[Any]]           |            |             |
-| [[StatusEffect#OnRemove():Any\|OnRemove()]]              | [[Any]]           |            |             |
-| [[StatusEffect#OnTick():Any\|OnTick()]]                  | [[Any]]           |            |             |
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[StatusEffect#^createlistener\|CreateListener()]] | [[EventListener]] | [[EventType]] event, [[Int]] priority |  |
+| [[StatusEffect#^addlistener\|AddListener()]] | [[Void]] | [[EventListener]] listener |  |
+| [[StatusEffect#^removelistener\|RemoveListener()]] | [[Void]] | [[EventListener]] listener |  |
+| [[StatusEffect#^clearlisteners\|ClearListeners()]] | [[Void]] |  |  |
+| [[StatusEffect#^istrait\|IsTrait()]] | [[Bool]] | [[TraitType]] trait |  |
+| [[StatusEffect#^hastrait\|HasTrait()]] | [[Bool]] | [[TraitType]] trait |  |
+| [[StatusEffect#^addtrait\|AddTrait()]] | [[Void]] | [[TraitType]] trait |  |
+| [[StatusEffect#^onapply\|OnApply()]] | [[Void]] | [[Character]] c |  |
 
+### CreateListener ([[EventType]] event, [[Int]] priority) : [[EventListener]]
 
-### CreateListener() : [[EventListener]] ^CreateListener
-Placeholder description.
+^createlistener
 
-### AddListener() : [[Void]]
-Placeholder description.
+Description goes here.
 
-### RemoveListener() : [[Void]]
-Placeholder description.
+> [!Abstract]+ Parameters
+> 1. `event` This is a parameter.
+> 2. `priority` This is a parameter.
 
-### ClearListeners() : [[Void]]
-Placeholder description.
+> [!Success]+ Return value
+> Returns a [[EventListener]].
 
-### IsTrait() : [[Bool]]
-Placeholder description.
+### AddListener ([[EventListener]] listener) : [[Void]]
 
-### HasTrait() : [[Bool]]
-Placeholder description.
+^addlistener
 
-### AddTrait() : [[Void]]
-Placeholder description.
+Description goes here.
 
-### OnApply() : [[Any]]
-Placeholder description.
+> [!Abstract]+ Parameters
+> 1. `listener` This is a parameter.
 
-### OnRemove() : [[Any]]
-Placeholder description.
+### RemoveListener ([[EventListener]] listener) : [[Void]]
 
-### OnTick() : [[Any]]
-Placeholder description.
+^removelistener
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `listener` This is a parameter.
+
+### ClearListeners () : [[Void]]
+
+^clearlisteners
+
+Description goes here.
+
+### IsTrait ([[TraitType]] trait) : [[Bool]]
+
+^istrait
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `trait` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### HasTrait ([[TraitType]] trait) : [[Bool]]
+
+^hastrait
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `trait` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### AddTrait ([[TraitType]] trait) : [[Void]]
+
+^addtrait
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `trait` This is a parameter.
+
+### OnApply ([[Character]] c) : [[Void]]
+
+^onapply
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `c` This is a parameter.
 
