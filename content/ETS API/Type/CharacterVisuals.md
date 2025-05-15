@@ -3,6 +3,8 @@ title: CharacterVisuals
 draft: false
 tags:
  - ScriptObject
+aliases:
+ - ICharacterVisuals
 ---
 
 Description goes here.

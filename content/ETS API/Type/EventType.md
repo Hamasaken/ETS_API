@@ -22,7 +22,7 @@ t.AddStatus(s);
 ```
 
 > [!Hint]
-> By using [[EEvent#^39eaa3]] within [[EventListener#Do()]], it is possible to interrupt a raised event before it has time to happen. For most (but not all) event types, this will prevent the event from taking place.
+> By using [[EEvent#If()]] within [[EventListener#Do()]], it is possible to interrupt a raised event before it has time to happen. For most (but not all) event types, this will prevent the event from taking place.
 
 ## Values
 | Id  | Name          | Description                                                                                                                                                    |
@@ -37,6 +37,6 @@ t.AddStatus(s);
 | 14  | Attack        | Raised when any [[Character]] is about to perform an [[Attack]]. If interrupted, the attack will be prevented.                                                 |
 | 15  | Damage        | Raised when any [[Character]] is about to be dealt [[Damage]]. If interrupted, the character will be treated as "Immune" and won't happen.                     |
 | 16  | Healing       | Raised when any [[Character]] is about to be dealt [[Damage]]. If interrupted, the character will not receive any healing.                                     |
-| 17  | ChangeStat    | Raised when any [[Character]] is about to have a [[Stat]] changed via [[Character#^changestat\|Character.ChangeStat()]]. If interrupted, no change will occur. |
+| 17  | ChangeStat    | Raised when any [[Character]] is about to have a [[Stat]] changed via [[Character#ChangeStat()]]. If interrupted, no change will occur. |
 | 18  | AddStatus     | Raised when any [[Character]] is about to have an [[StatusEffect]] applied to them. If interrupted, the effect won't be applied.                               |
 | 30  | UseItem       | Raised when any [[Item]] is about to get used.                                                                                                                 |
