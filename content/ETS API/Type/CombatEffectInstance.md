@@ -19,21 +19,24 @@ Description goes here.
 ## Functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[CombatEffectInstance#^scaleddamage\|ScaledDamage()]] | [[Damage]] |  |  |
+| [[CombatEffectInstance#^scaleddamage\|ScaledDamage()]] | [[Damage]] | [[Character]] u |  |
 | [[CombatEffectInstance#^finish\|Finish()]] | [[Void]] |  |  |
-| [[CombatEffectInstance#^spawnprojectile\|SpawnProjectile()]] | [[IProjectile]] | [[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
-| [[CombatEffectInstance#^spawnprojectilec\|SpawnProjectileC()]] | [[IProjectile]] | [[Character]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
-| [[CombatEffectInstance#^spawnprojectilet\|SpawnProjectileT()]] | [[IProjectile]] | [[Tile]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
-| [[CombatEffectInstance#^queueaction\|QueueAction()]] | [[Void]] | [[IAnimationListener]] listener, [[Function]] callback |  |
-| [[CombatEffectInstance#^waitforanimation\|WaitForAnimation()]] | [[Void]] | [[IAnimationListener]] listener, [[Function]] callback |  |
+| [[CombatEffectInstance#^spawnprojectile\|SpawnProjectile()]] | [[Projectile]] | [[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
+| [[CombatEffectInstance#^spawnprojectilec\|SpawnProjectileC()]] | [[Projectile]] | [[Character]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
+| [[CombatEffectInstance#^spawnprojectilet\|SpawnProjectileT()]] | [[Projectile]] | [[Tile]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
+| [[CombatEffectInstance#^queueaction\|QueueAction()]] | [[Void]] | [[AnimationListener]] listener, [[Function]] callback |  |
+| [[CombatEffectInstance#^waitforanimation\|WaitForAnimation()]] | [[Void]] | [[AnimationListener]] listener, [[Function]] callback |  |
 | [[CombatEffectInstance#^waitforprojectiles\|WaitForProjectiles()]] | [[Void]] | [[Function]] callback |  |
 | [[CombatEffectInstance#^selecttargets\|SelectTargets()]] | [[Void]] | [[Targeting]] targeting, [[Function]] callback |  |
 
-### ScaledDamage () : [[Damage]]
+### ScaledDamage ([[Character]] u) : [[Damage]]
 
 ^scaleddamage
 
 Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `u` This is a parameter.
 
 > [!Success]+ Return value
 > Returns a [[Damage]].
@@ -44,7 +47,7 @@ Description goes here.
 
 Description goes here.
 
-### SpawnProjectile ([[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[IProjectile]]
+### SpawnProjectile ([[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[Projectile]]
 
 ^spawnprojectile
 
@@ -59,7 +62,7 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[IProjectile]].
 
-### SpawnProjectileC ([[Character]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[IProjectile]]
+### SpawnProjectileC ([[Character]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[Projectile]]
 
 ^spawnprojectilec
 
@@ -74,7 +77,7 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[IProjectile]].
 
-### SpawnProjectileT ([[Tile]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[IProjectile]]
+### SpawnProjectileT ([[Tile]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[Projectile]]
 
 ^spawnprojectilet
 
@@ -89,7 +92,7 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[IProjectile]].
 
-### QueueAction ([[IAnimationListener]] listener, [[Function]] callback) : [[Void]]
+### QueueAction ([[AnimationListener]] listener, [[Function]] callback) : [[Void]]
 
 ^queueaction
 
@@ -99,7 +102,7 @@ Description goes here.
 > 1. `listener` This is a parameter.
 > 2. `callback` This is a parameter.
 
-### WaitForAnimation ([[IAnimationListener]] listener, [[Function]] callback) : [[Void]]
+### WaitForAnimation ([[AnimationListener]] listener, [[Function]] callback) : [[Void]]
 
 ^waitforanimation
 

@@ -29,6 +29,7 @@ ETScript is a softly typed scripting language. Behind the scenes, all of the dat
 | 30 | [[Scope]]  |  |
 | 31 | [[Instruction]]  |  |
 | 32 | [[Expression]]  |  |
+| 33 | [[Namespace]]  |  |
 | 40 | [[Function]]  |  |
 | 41 | [[EventListener]]  |  |
 | 50 | [[EEvent]]  |  |
@@ -57,6 +58,6 @@ ETScript is a softly typed scripting language. Behind the scenes, all of the dat
 | 402 | [[GridItem]]  |  |
 | 403 | [[PathNode]]  |  |
 | 410 | [[Tile]]  |  |
-| 500 | [[ICharacterVisuals]]  |  |
-| 501 | [[IProjectile]]  |  |
-| 502 | [[IAnimationListener]]  |  |
+| 500 | [[CharacterVisuals]]  |  |
+| 501 | [[Projectile]]  |  |
+| 502 | [[AnimationListener]]  |  |

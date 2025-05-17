@@ -16,8 +16,6 @@ Description goes here.
 | description | [[String]] | False |  |
 | duration | [[Int]] | False |  |
 | value | [[Int]] | False |  |
-| OnRemove | [[Void]] | False |  |
-| OnTick | [[Void]] | False |  |
 
 ^709a4f
 
@@ -33,6 +31,8 @@ Description goes here.
 | [[StatusEffect#^hastrait\|HasTrait()]] | [[Bool]] | [[TraitType]] trait |  |
 | [[StatusEffect#^addtrait\|AddTrait()]] | [[Void]] | [[TraitType]] trait |  |
 | [[StatusEffect#^onapply\|OnApply()]] | [[Void]] | [[Character]] c |  |
+| [[StatusEffect#^onremove\|OnRemove()]] | [[Void]] | [[Character]] c |  |
+| [[StatusEffect#^ontick\|OnTick()]] | [[Void]] | [[Character]] c |  |
 
 ### CreateListener ([[EventType]] event, [[Int]] priority) : [[EventListener]]
 
@@ -107,6 +107,24 @@ Description goes here.
 ### OnApply ([[Character]] c) : [[Void]]
 
 ^onapply
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `c` This is a parameter.
+
+### OnRemove ([[Character]] c) : [[Void]]
+
+^onremove
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `c` This is a parameter.
+
+### OnTick ([[Character]] c) : [[Void]]
+
+^ontick
 
 Description goes here.
 

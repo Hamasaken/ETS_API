@@ -27,22 +27,22 @@ Description goes here.
 
 ^length
 
-Description goes here.
+Gets the length of the string.
 
 > [!Success]+ Return value
-> Returns a [[Int]].
+> Returns an [[Int]] representing the total amount of characters in the string.
 
 ### Contains ([[String]] value) : [[Bool]]
 
 ^contains
 
-Description goes here.
+Checks whether this string contains another string value.
 
 > [!Abstract]+ Parameters
-> 1. `value` This is a parameter.
+> 1. `value` The string to search for.
 
 > [!Success]+ Return value
-> Returns a [[Bool]].
+> Returns true if the value is found, otherwise false.
 
 ### StartsWith ([[String]] value) : [[Bool]]
 

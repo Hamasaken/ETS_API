@@ -15,9 +15,9 @@ Description goes here.
 ## Functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[Projectile#^addtrail\|AddTrail()]] | [[IProjectile]] | [[Int]] id |  |
+| [[Projectile#^addtrail\|AddTrail()]] | [[Projectile]] | [[Int]] id |  |
 
-### AddTrail ([[Int]] id) : [[IProjectile]]
+### AddTrail ([[Int]] id) : [[Projectile]]
 
 ^addtrail
 

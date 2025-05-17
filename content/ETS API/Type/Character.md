@@ -12,7 +12,7 @@ Description goes here.
 | ---- | ---- | -------- | ---- |
 | id | [[String]] | False |  |
 | name | [[String]] | False |  |
-| visuals | [[ICharacterVisuals]] | True |  |
+| visuals | [[CharacterVisuals]] | True |  |
 | position | [[GridItem]] | False |  |
 | team | [[Team]] | False |  |
 
@@ -29,6 +29,8 @@ Description goes here.
 | [[Character#^stat\|Stat()]] | [[Stat]] | [[StatType]] stat |  |
 | [[Character#^getstat\|GetStat()]] | [[Int]] | [[StatType]] stat |  |
 | [[Character#^setstat\|SetStat()]] | [[Void]] | [[StatType]] stat, [[Int]] value |  |
+| [[Character#^hasstatus\|HasStatus()]] | [[Bool]] | [[String]] id |  |
+| [[Character#^getstatus\|GetStatus()]] | [[StatusEffect]] | [[String]] id |  |
 | [[Character#^addstatus\|AddStatus()]] | [[Bool]] | [[StatusEffect]] status |  |
 | [[Character#^removestatus\|RemoveStatus()]] | [[Void]] | [[StatusEffect]] status |  |
 | [[Character#^gethitchance\|GetHitChance()]] | [[Float]] | [[Attack]] attack |  |
@@ -151,6 +153,30 @@ Description goes here.
 > 1. `stat` This is a parameter.
 > 2. `value` This is a parameter.
 
+### HasStatus ([[String]] id) : [[Bool]]
+
+^hasstatus
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `id` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### GetStatus ([[String]] id) : [[StatusEffect]]
+
+^getstatus
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `id` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[StatusEffect]].
+
 ### AddStatus ([[StatusEffect]] status) : [[Bool]]
 
 ^addstatus
@@ -197,12 +223,13 @@ Description goes here.
 
 ^performattack
 
-Description goes here.
+Makes this character attempt to attack a target character using the [[Attack]] values.
+If the attack hits, and the damage parameter has been set, then the game also deals the damage to the target.
 
 > [!Abstract]+ Parameters
 > 1. `target` This is a parameter.
-> 2. `attack` This is a parameter.
-> 3. `damage` This is a parameter.
+> 2. `attack` Settings for hitchance and [[AttackType]].
+> 3. `damage` Settings for damage amount and [[DamageType]].
 
 > [!Success]+ Return value
 > Returns a [[Bool]].

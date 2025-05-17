@@ -1,0 +1,1 @@
+[[Eternal Tides]] uses a bunch of managers to keep track of certain 

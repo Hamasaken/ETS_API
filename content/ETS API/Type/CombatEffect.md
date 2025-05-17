@@ -18,13 +18,16 @@ Description goes here.
 ## Functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[CombatEffect#^scaleddamage\|ScaledDamage()]] | [[Damage]] |  |  |
+| [[CombatEffect#^scaleddamage\|ScaledDamage()]] | [[Damage]] | [[Character]] u |  |
 
-### ScaledDamage () : [[Damage]]
+### ScaledDamage ([[Character]] u) : [[Damage]]
 
 ^scaleddamage
 
 Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `u` This is a parameter.
 
 > [!Success]+ Return value
 > Returns a [[Damage]].

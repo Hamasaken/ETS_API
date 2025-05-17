@@ -12,6 +12,7 @@ Description goes here.
 | ---- | ---- | -------- | ---- |
 | id | [[String]] | False |  |
 | name | [[String]] | False |  |
+| u | [[Character]] | False |  |
 
 ## Functions
 | Name | Return type | Parameters | Note |

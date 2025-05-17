@@ -9,8 +9,8 @@ Placeholder description for FlagType.
 
 
 ## Values
-| Id  | Name       | Description |
-| --- | ---------- | ----------- |
+| Id  | Name             | Description |
+| --- | ---------------- | ----------- |
 | 0 | Default  |  |
 | 1 | Alive  |  |
 | 2 | PlayerControlled  |  |

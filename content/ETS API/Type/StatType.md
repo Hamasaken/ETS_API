@@ -5,7 +5,7 @@ tags:
  - ClassEnum
 ---
 
-Placeholder description for StatType.
+Every character in the game has a set of statistics that determines their gameplay characteristics.
 
 ## Values
 | id  | name             | default | description |
