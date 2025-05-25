@@ -42,6 +42,7 @@ ETScript is a softly typed scripting language. Behind the scenes, all of the dat
 | 202 | [[Damage]]  |  |
 | 203 | [[Targeting]]  |  |
 | 204 | [[StatScaling]]  |  |
+| 205 | [[TargetingResult]]  |  |
 | 210 | [[StatusEffect]]  |  |
 | 220 | [[Item]]  |  |
 | 300 | [[Type]]  |  |

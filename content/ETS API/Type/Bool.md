@@ -1,5 +1,5 @@
 ---
-title: AdventureManager
+title: Bool
 draft: false
 tags:
  - ScriptObject
@@ -10,8 +10,6 @@ Description goes here.
 ## Variables
 | Name | Type | Readonly | Note |
 | ---- | ---- | -------- | ---- |
-| party | [[List]]<[[Character]]> | True |  |
-| inv | [[List]]<[[Item]]> | True |  |
 
 ## Functions
 | Name | Return type | Parameters | Note |

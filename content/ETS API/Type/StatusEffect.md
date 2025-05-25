@@ -12,10 +12,11 @@ Description goes here.
 | ---- | ---- | -------- | ---- |
 | id | [[String]] | False |  |
 | name | [[String]] | False |  |
-| image | [[String]] | False |  |
-| description | [[String]] | False |  |
+| unique | [[Bool]] | True |  |
 | duration | [[Int]] | False |  |
 | value | [[Int]] | False |  |
+| image | [[String]] | False |  |
+| description | [[String]] | False |  |
 
 ^709a4f
 

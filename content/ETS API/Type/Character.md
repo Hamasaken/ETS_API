@@ -29,6 +29,7 @@ Description goes here.
 | [[Character#^stat\|Stat()]] | [[Stat]] | [[StatType]] stat |  |
 | [[Character#^getstat\|GetStat()]] | [[Int]] | [[StatType]] stat |  |
 | [[Character#^setstat\|SetStat()]] | [[Void]] | [[StatType]] stat, [[Int]] value |  |
+| [[Character#^changestat\|ChangeStat()]] | [[Void]] | [[StatType]] stat, [[StatAction]] action, [[Int]] value |  |
 | [[Character#^hasstatus\|HasStatus()]] | [[Bool]] | [[String]] id |  |
 | [[Character#^getstatus\|GetStatus()]] | [[StatusEffect]] | [[String]] id |  |
 | [[Character#^addstatus\|AddStatus()]] | [[Bool]] | [[StatusEffect]] status |  |
@@ -36,10 +37,10 @@ Description goes here.
 | [[Character#^gethitchance\|GetHitChance()]] | [[Float]] | [[Attack]] attack |  |
 | [[Character#^getevadechance\|GetEvadeChance()]] | [[Float]] |  |  |
 | [[Character#^performattack\|PerformAttack()]] | [[Bool]] | [[Character]] target, [[Attack]] attack, [[Damage]] damage |  |
+| [[Character#^performattackgroup\|PerformAttackGroup()]] | [[List]]<[[Character]]> | [[TargetingResult]] targets, [[Attack]] attack, [[Damage]] damage |  |
 | [[Character#^takedamage\|TakeDamage()]] | [[Void]] | [[Damage]] damage |  |
 | [[Character#^takedamage2\|TakeDamage2()]] | [[Void]] | [[Damage]] damage |  |
 | [[Character#^healdamage\|HealDamage()]] | [[Void]] | [[Int]] value |  |
-| [[Character#^changestat\|ChangeStat()]] | [[Void]] | [[StatType]] stat, [[StatAction]] action, [[Int]] value |  |
 | [[Character#^isally\|IsAlly()]] | [[Bool]] | [[Character]] character |  |
 | [[Character#^isenemy\|IsEnemy()]] | [[Bool]] | [[Character]] character |  |
 
@@ -153,6 +154,17 @@ Description goes here.
 > 1. `stat` This is a parameter.
 > 2. `value` This is a parameter.
 
+### ChangeStat ([[StatType]] stat, [[StatAction]] action, [[Int]] value) : [[Void]]
+
+^changestat
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `stat` This is a parameter.
+> 2. `action` This is a parameter.
+> 3. `value` This is a parameter.
+
 ### HasStatus ([[String]] id) : [[Bool]]
 
 ^hasstatus
@@ -234,6 +246,20 @@ If the attack hits, and the damage parameter has been set, then the game also de
 > [!Success]+ Return value
 > Returns a [[Bool]].
 
+### PerformAttackGroup ([[TargetingResult]] targets, [[Attack]] attack, [[Damage]] damage) : [[List]]<[[Character]]>
+
+^performattackgroup
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `targets` This is a parameter.
+> 2. `attack` This is a parameter.
+> 3. `damage` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[List]]<[[Character]]>.
+
 ### TakeDamage ([[Damage]] damage) : [[Void]]
 
 ^takedamage
@@ -260,17 +286,6 @@ Description goes here.
 
 > [!Abstract]+ Parameters
 > 1. `value` This is a parameter.
-
-### ChangeStat ([[StatType]] stat, [[StatAction]] action, [[Int]] value) : [[Void]]
-
-^changestat
-
-Description goes here.
-
-> [!Abstract]+ Parameters
-> 1. `stat` This is a parameter.
-> 2. `action` This is a parameter.
-> 3. `value` This is a parameter.
 
 ### IsAlly ([[Character]] character) : [[Bool]]
 
