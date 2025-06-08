@@ -20,10 +20,11 @@ Description goes here.
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
 | [[CombatEffectInstance#^scaleddamage\|ScaledDamage()]] | [[Damage]] | [[Character]] u |  |
+| [[CombatEffectInstance#^scaledvalue\|ScaledValue()]] | [[Int]] | [[Character]] u | |
 | [[CombatEffectInstance#^finish\|Finish()]] | [[Void]] |  |  |
-| [[CombatEffectInstance#^spawnprojectile\|SpawnProjectile()]] | [[Projectile]] | [[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
-| [[CombatEffectInstance#^spawnprojectilec\|SpawnProjectileC()]] | [[Projectile]] | [[Character]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
-| [[CombatEffectInstance#^spawnprojectilet\|SpawnProjectileT()]] | [[Projectile]] | [[Tile]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
+| [[CombatEffectInstance#^spawnprojectile\|SpawnProjectile()]] | [[Projectile]] | [[GridItem]] target, [[String]] image, [[Function]] callback |  |
+| [[CombatEffectInstance#^spawnprojectilec\|SpawnProjectileC()]] | [[Projectile]] | [[Character]] target, [[String]] image, [[Function]] callback |  |
+| [[CombatEffectInstance#^spawnprojectileat\|SpawnProjectileAt()]] | [[Projectile]] | [[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback | |
 | [[CombatEffectInstance#^queueaction\|QueueAction()]] | [[Void]] | [[AnimationListener]] listener, [[Function]] callback |  |
 | [[CombatEffectInstance#^waitforanimation\|WaitForAnimation()]] | [[Void]] | [[AnimationListener]] listener, [[Function]] callback |  |
 | [[CombatEffectInstance#^waitforprojectiles\|WaitForProjectiles()]] | [[Void]] | [[Function]] callback |  |
@@ -41,45 +42,55 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[Damage]].
 
+### ScaledValue ([[Character]] u) : [[Int]]
+
+^scaledvalue
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `u` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Int]].
+
 ### Finish () : [[Void]]
 
 ^finish
 
 Description goes here.
 
-### SpawnProjectile ([[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[Projectile]]
+### SpawnProjectile ([[GridItem]] target, [[String]] image, [[Function]] callback) : [[Projectile]]
 
 ^spawnprojectile
 
 Description goes here.
 
 > [!Abstract]+ Parameters
-> 1. `spawn` This is a parameter.
-> 2. `target` This is a parameter.
-> 3. `image` This is a parameter.
-> 4. `callback` This is a parameter.
+> 1. `target` This is a parameter.
+> 2. `image` This is a parameter.
+> 3. `callback` This is a parameter.
 
 > [!Success]+ Return value
 > Returns a [[IProjectile]].
 
-### SpawnProjectileC ([[Character]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[Projectile]]
+### SpawnProjectileC ([[Character]] target, [[String]] image, [[Function]] callback) : [[Projectile]]
 
 ^spawnprojectilec
 
 Description goes here.
 
 > [!Abstract]+ Parameters
-> 1. `spawn` This is a parameter.
-> 2. `target` This is a parameter.
-> 3. `image` This is a parameter.
-> 4. `callback` This is a parameter.
+> 1. `target` This is a parameter.
+> 2. `image` This is a parameter.
+> 3. `callback` This is a parameter.
 
 > [!Success]+ Return value
 > Returns a [[IProjectile]].
 
-### SpawnProjectileT ([[Tile]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[Projectile]]
+### SpawnProjectileAt ([[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback) : [[Projectile]]
 
-^spawnprojectilet
+^spawnprojectileat
 
 Description goes here.
 
@@ -90,7 +101,7 @@ Description goes here.
 > 4. `callback` This is a parameter.
 
 > [!Success]+ Return value
-> Returns a [[IProjectile]].
+> Returns a [[Projectile]].
 
 ### QueueAction ([[AnimationListener]] listener, [[Function]] callback) : [[Void]]
 

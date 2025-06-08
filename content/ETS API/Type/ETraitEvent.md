@@ -1,5 +1,5 @@
 ---
-title: EItemEvent
+title: ETraitEvent
 draft: false
 tags:
  - ScriptObject
@@ -13,12 +13,12 @@ Description goes here.
 | type | [[EventType]] | True |  |
 | stopped | [[Bool]] | True |  |
 | c | [[Character]] | False |  |
-| item | [[Item]] | False |  |
+| trait | [[TraitType]] | False |  |
 
 ## Functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[EItemEvent#^stop\|Stop()]] | [[Void]] |  |  |
+| [[ETraitEvent#^stop\|Stop()]] | [[Void]] |  |  |
 
 ### Stop () : [[Void]]
 

@@ -33,13 +33,13 @@ Description goes here.
 | [[Character#^hasstatus\|HasStatus()]] | [[Bool]] | [[String]] id |  |
 | [[Character#^getstatus\|GetStatus()]] | [[StatusEffect]] | [[String]] id |  |
 | [[Character#^addstatus\|AddStatus()]] | [[Bool]] | [[StatusEffect]] status |  |
-| [[Character#^removestatus\|RemoveStatus()]] | [[Void]] | [[StatusEffect]] status |  |
+| [[Character#^removestatus\|RemoveStatus()]] | [[Bool]] | [[StatusEffect]] status |  |
 | [[Character#^gethitchance\|GetHitChance()]] | [[Float]] | [[Attack]] attack |  |
 | [[Character#^getevadechance\|GetEvadeChance()]] | [[Float]] |  |  |
 | [[Character#^performattack\|PerformAttack()]] | [[Bool]] | [[Character]] target, [[Attack]] attack, [[Damage]] damage |  |
 | [[Character#^performattackgroup\|PerformAttackGroup()]] | [[List]]<[[Character]]> | [[TargetingResult]] targets, [[Attack]] attack, [[Damage]] damage |  |
 | [[Character#^takedamage\|TakeDamage()]] | [[Void]] | [[Damage]] damage |  |
-| [[Character#^takedamage2\|TakeDamage2()]] | [[Void]] | [[Damage]] damage |  |
+| [[Character#^takedamage2\|TakeDamage2()]] | [[Void]] | [[Int]] value, [[DamageType]] type, [[Bool]] pen |  |
 | [[Character#^healdamage\|HealDamage()]] | [[Void]] | [[Int]] value |  |
 | [[Character#^isally\|IsAlly()]] | [[Bool]] | [[Character]] character |  |
 | [[Character#^isenemy\|IsEnemy()]] | [[Bool]] | [[Character]] character |  |
@@ -201,7 +201,7 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[Bool]].
 
-### RemoveStatus ([[StatusEffect]] status) : [[Void]]
+### RemoveStatus ([[StatusEffect]] status) : [[Bool]]
 
 ^removestatus
 
@@ -209,6 +209,9 @@ Description goes here.
 
 > [!Abstract]+ Parameters
 > 1. `status` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
 
 ### GetHitChance ([[Attack]] attack) : [[Float]]
 
@@ -269,14 +272,16 @@ Description goes here.
 > [!Abstract]+ Parameters
 > 1. `damage` This is a parameter.
 
-### TakeDamage2 ([[Damage]] damage) : [[Void]]
+### TakeDamage2 ([[Int]] value, [[DamageType]] type, [[Bool]] pen) : [[Void]]
 
 ^takedamage2
 
 Description goes here.
 
 > [!Abstract]+ Parameters
-> 1. `damage` This is a parameter.
+> 1. `value` This is a parameter.
+> 2. `type` This is a parameter.
+> 3. `pen` This is a parameter.
 
 ### HealDamage ([[Int]] value) : [[Void]]
 

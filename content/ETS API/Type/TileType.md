@@ -14,3 +14,4 @@ Placeholder description for TileType.
 | 11 | [[wall]] | tile/black.png |   |  |
 | 12 | [[water]] | tile/water.png | Flying: 0  |  |
 | 13 | [[dirt]] | tile/dirt.png | Default: 0  |  |
+

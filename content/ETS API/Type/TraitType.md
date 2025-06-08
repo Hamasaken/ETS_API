@@ -2,7 +2,8 @@
 title: TraitType
 draft: false
 tags:
- - ClassEnum
+  - ClassEnum
+  - ScriptObject
 ---
 
 Placeholder description for TraitType.
@@ -19,13 +20,9 @@ Placeholder description for TraitType.
 | 1001 | [[Human]] | [[TraitGroup#Race]] | [[Humanoid]]  | This is a Race trait. |
 | 1002 | [[Elf]] | [[TraitGroup#Race]] | [[Humanoid]]  | This is a Race trait. |
 | 1003 | [[Orc]] | [[TraitGroup#Race]] | [[Humanoid]]  | This is a Race trait. |
-| 1100 | [[Undead]] | [[TraitGroup#Race]] |   | This is a Race trait. |
-| 1101 | [[Skeleton]] | [[TraitGroup#Race]] | [[Undead]]  | This is a Race trait. |
-| 1102 | [[Zombie]] | [[TraitGroup#Race]] | [[Undead]]  | This is a Race trait. |
 | 1120 | [[Lamia]] | [[TraitGroup#Race]] |   | This is a Race trait. |
 | 1300 | [[Beast]] | [[TraitGroup#Race]] |   | This is a Race trait. |
 | 2000 | [[Pirate]] | [[TraitGroup#Job]] |   | This is a Job trait. |
-| 2001 | [[Assassain]] | [[TraitGroup#Job]] |   | This is a Job trait. |
 | 2002 | [[Necromancer]] | [[TraitGroup#Job]] |   | This is a Job trait. |
 | 2003 | [[Nun]] | [[TraitGroup#Job]] |   | This is a Job trait. |
 | 3000 | [[Curious]] | [[TraitGroup#Personality]] |   | This is a Personality trait. |
@@ -38,7 +35,6 @@ Placeholder description for TraitType.
 | 4001 | [[Female]] | [[TraitGroup#Physical]] |   | This is a Physical trait. |
 | 4002 | [[Beautiful]] | [[TraitGroup#Physical]] |   | This is a Physical trait. |
 | 4003 | [[Strong]] | [[TraitGroup#Physical]] |   | This is a Physical trait. |
-| 4004 | [[Buxom]] | [[TraitGroup#Physical]] |   | This is a Physical trait. |
 | 5000 | [[Void]] | [[TraitGroup#Element]] |   | This is a Element trait. |
 | 5001 | [[Physical]] | [[TraitGroup#Element]] |   | This is a Element trait. |
 | 5002 | [[Fire]] | [[TraitGroup#Element]] |   | This is a Element trait. |
@@ -50,4 +46,39 @@ Placeholder description for TraitType.
 | 6000 | [[Buff]] | [[TraitGroup#Status]] |   | This is a Status trait. |
 | 6200 | [[Debuff]] | [[TraitGroup#Status]] |   | This is a Status trait. |
 | 6201 | [[Poison]] | [[TraitGroup#Status]] | [[Debuff]]  | This is a Status trait. |
+| 100000 | [[Undead]] | [[TraitGroup#Race]] |   | This is a Race trait. |
+| 100001 | [[Skeleton]] | [[TraitGroup#Race]] | [[Undead]]  | This is a Race trait. |
+| 100002 | [[Zombie]] | [[TraitGroup#Race]] | [[Undead]]  | This is a Race trait. |
+
+## Variables
+| Name | Type | Readonly | Note |
+| ---- | ---- | -------- | ---- |
+| group | [[TraitGroup]] | True |  |
+| parent | [[TraitType]] | True |  |
+
+## Functions
+| Name | Return type | Parameters | Note |
+| ---- | ----------- | ---------- | ---- |
+| [[TraitType#^onapply\|OnApply()]] | [[Void]] | [[Character]] c, [[Trait]] t |  |
+| [[TraitType#^onremove\|OnRemove()]] | [[Void]] | [[Character]] c, [[Trait]] t |  |
+
+### OnApply ([[Character]] c, [[Trait]] t) : [[Void]]
+
+^onapply
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `c` This is a parameter.
+> 2. `t` This is a parameter.
+
+### OnRemove ([[Character]] c, [[Trait]] t) : [[Void]]
+
+^onremove
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `c` This is a parameter.
+> 2. `t` This is a parameter.
 

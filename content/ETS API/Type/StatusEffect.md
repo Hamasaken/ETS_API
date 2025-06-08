@@ -12,7 +12,7 @@ Description goes here.
 | ---- | ---- | -------- | ---- |
 | id | [[String]] | False |  |
 | name | [[String]] | False |  |
-| unique | [[Bool]] | True |  |
+| isUnique | [[Bool]] | True |  |
 | duration | [[Int]] | False |  |
 | value | [[Int]] | False |  |
 | image | [[String]] | False |  |
@@ -30,7 +30,8 @@ Description goes here.
 | [[StatusEffect#^clearlisteners\|ClearListeners()]] | [[Void]] |  |  |
 | [[StatusEffect#^istrait\|IsTrait()]] | [[Bool]] | [[TraitType]] trait |  |
 | [[StatusEffect#^hastrait\|HasTrait()]] | [[Bool]] | [[TraitType]] trait |  |
-| [[StatusEffect#^addtrait\|AddTrait()]] | [[Void]] | [[TraitType]] trait |  |
+| [[StatusEffect#^addtrait\|AddTrait()]] | [[Bool]] | [[TraitType]] trait |  |
+| [[StatusEffect#^removetrait\|RemoveTrait()]] | [[Bool]] | [[TraitType]] trait |  |
 | [[StatusEffect#^onapply\|OnApply()]] | [[Void]] | [[Character]] c |  |
 | [[StatusEffect#^onremove\|OnRemove()]] | [[Void]] | [[Character]] c |  |
 | [[StatusEffect#^ontick\|OnTick()]] | [[Void]] | [[Character]] c |  |
@@ -96,7 +97,7 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[Bool]].
 
-### AddTrait ([[TraitType]] trait) : [[Void]]
+### AddTrait ([[TraitType]] trait) : [[Bool]]
 
 ^addtrait
 
@@ -104,6 +105,21 @@ Description goes here.
 
 > [!Abstract]+ Parameters
 > 1. `trait` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### RemoveTrait ([[TraitType]] trait) : [[Bool]]
+
+^removetrait
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `trait` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
 
 ### OnApply ([[Character]] c) : [[Void]]
 

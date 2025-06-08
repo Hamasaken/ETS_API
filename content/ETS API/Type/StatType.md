@@ -19,10 +19,11 @@ Every character in the game has a set of statistics that determines their gamepl
 | 12 | [[Accuracy]] | 0  |  |
 | 13 | [[Evasiveness]] | 0  |  |
 | 100 | [[Strength]] | 0  |  |
-| 103 | [[Constitution]] | 0  |  |
 | 101 | [[Dexterity]] | 0  |  |
-| 104 | [[Agility]] | 0  |  |
 | 102 | [[Intelligence]] | 0  |  |
+| 103 | [[Constitution]] | 0  |  |
+| 104 | [[Agility]] | 0  |  |
 | 105 | [[Spirit]] | 0  |  |
 | 120 | [[Luck]] | 50  |  |
 | 121 | [[Charisma]] | 0  |  |
+| 100000 | [[Sanity]] | 50  |  |
