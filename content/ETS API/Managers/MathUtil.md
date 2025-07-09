@@ -14,12 +14,12 @@ Description goes here.
 ## Functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[MathUtil#^asint\|AsInt()]] | [[Int]] | [[Any]] number |  |
-| [[MathUtil#^asfloat\|AsFloat()]] | [[Float]] | [[Any]] number |  |
+| [[MathUtil#^toint\|ToInt()]] | [[Int]] | [[Any]] number |  |
+| [[MathUtil#^tofloat\|ToFloat()]] | [[Float]] | [[Any]] number |  |
 
-### AsInt ([[Any]] number) : [[Int]]
+### ToInt ([[Any]] number) : [[Int]]
 
-^asint
+^toint
 
 Description goes here.
 
@@ -29,9 +29,9 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[Int]].
 
-### AsFloat ([[Any]] number) : [[Float]]
+### ToFloat ([[Any]] number) : [[Float]]
 
-^asfloat
+^tofloat
 
 Description goes here.
 

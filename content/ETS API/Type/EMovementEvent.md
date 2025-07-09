@@ -12,8 +12,9 @@ Description goes here.
 | ---- | ---- | -------- | ---- |
 | type | [[EventType]] | True |  |
 | stopped | [[Bool]] | True |  |
-| c | [[Character]] | False |  |
-| path | [[List]]<[[PathNode]]> | False |  |
+| u | [[Unit]] | False |  |
+| unit | [[Unit]] | False |  |
+| movement | [[Movement]] | False |  |
 
 ## Functions
 | Name | Return type | Parameters | Note |

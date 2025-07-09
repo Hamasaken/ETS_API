@@ -42,7 +42,11 @@ t.AddStatus(s);
 | 19 | RemoveStatus  |  |
 | 20 | AddTrait  |  |
 | 21 | RemoveTrait  |  |
-| 30 | ItemConsume  |  |
-| 31 | ItemUse  |  |
-| 32 | ItemEquip  |  |
-| 33 | ItemUnequip  |  |
+| 100 | ItemCanConsume  |  |
+| 101 | ItemCanUse  |  |
+| 102 | ItemCanEquip  |  |
+| 103 | ItemCanUnequip  |  |
+| 110 | ItemConsume  |  |
+| 111 | ItemUse  |  |
+| 112 | ItemEquip  |  |
+| 113 | ItemUnequip  |  |

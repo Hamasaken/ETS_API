@@ -1,5 +1,5 @@
 ---
-title: StatusEffect
+title: Status
 draft: false
 tags:
  - ScriptObject
@@ -18,23 +18,20 @@ Description goes here.
 | image | [[String]] | False |  |
 | description | [[String]] | False |  |
 
-^709a4f
-
-
 ## Functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[StatusEffect#^createlistener\|CreateListener()]] | [[EventListener]] | [[EventType]] event, [[Int]] priority |  |
-| [[StatusEffect#^addlistener\|AddListener()]] | [[Void]] | [[EventListener]] listener |  |
-| [[StatusEffect#^removelistener\|RemoveListener()]] | [[Void]] | [[EventListener]] listener |  |
-| [[StatusEffect#^clearlisteners\|ClearListeners()]] | [[Void]] |  |  |
-| [[StatusEffect#^istrait\|IsTrait()]] | [[Bool]] | [[TraitType]] trait |  |
-| [[StatusEffect#^hastrait\|HasTrait()]] | [[Bool]] | [[TraitType]] trait |  |
-| [[StatusEffect#^addtrait\|AddTrait()]] | [[Bool]] | [[TraitType]] trait |  |
-| [[StatusEffect#^removetrait\|RemoveTrait()]] | [[Bool]] | [[TraitType]] trait |  |
-| [[StatusEffect#^onapply\|OnApply()]] | [[Void]] | [[Character]] c |  |
-| [[StatusEffect#^onremove\|OnRemove()]] | [[Void]] | [[Character]] c |  |
-| [[StatusEffect#^ontick\|OnTick()]] | [[Void]] | [[Character]] c |  |
+| [[Status#^createlistener\|CreateListener()]] | [[EventListener]] | [[EventType]] event, [[Int]] priority |  |
+| [[Status#^addlistener\|AddListener()]] | [[Void]] | [[EventListener]] listener |  |
+| [[Status#^removelistener\|RemoveListener()]] | [[Void]] | [[EventListener]] listener |  |
+| [[Status#^clearlisteners\|ClearListeners()]] | [[Void]] |  |  |
+| [[Status#^istrait\|IsTrait()]] | [[Bool]] | [[TraitType]] trait |  |
+| [[Status#^hastrait\|HasTrait()]] | [[Bool]] | [[TraitType]] trait |  |
+| [[Status#^addtrait\|AddTrait()]] | [[Bool]] | [[TraitType]] trait |  |
+| [[Status#^removetrait\|RemoveTrait()]] | [[Bool]] | [[TraitType]] trait |  |
+| [[Status#^onapply\|OnApply()]] | [[Void]] | [[Character]] c |  |
+| [[Status#^onremove\|OnRemove()]] | [[Void]] | [[Character]] c |  |
+| [[Status#^ontick\|OnTick()]] | [[Void]] | [[Character]] c |  |
 
 ### CreateListener ([[EventType]] event, [[Int]] priority) : [[EventListener]]
 

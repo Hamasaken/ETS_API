@@ -11,25 +11,77 @@ Description goes here.
 | Name | Type | Readonly | Note |
 | ---- | ---- | -------- | ---- |
 | isInCombat | [[Bool]] | True |  |
+| isPaused | [[Bool]] | True |  |
+| currentUnit | [[Unit]] | True | |
 
 ## Functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[CombatManager#^getunits\|GetUnits()]] | [[List]]<[[Character]]> |  |  |
-| [[CombatManager#^spawnunit\|SpawnUnit()]] | [[CharacterVisuals]] | [[Character]] c, [[GridItem]] pos |  |
-| [[CombatManager#^spawnunit2\|SpawnUnit2()]] | [[CharacterVisuals]] | [[Character]] c, [[Int]] x, [[Int]] y | |
-| [[CombatManager#^removeunit\|RemoveUnit()]] | [[Bool]] | [[Character]] c |  |
+| [[CombatManager#^getunit\|GetUnit()]] | [[Unit]] | [[GridItem]] position |  |
+| [[CombatManager#^getunit2\|GetUnit2()]] | [[Unit]] | [[Int]] x, [[Int]] y | |
+| [[CombatManager#^getunits\|GetUnits()]] | [[List]]<[[Unit]]> |  | |
+| [[CombatManager#^getdeadunits\|GetDeadUnits()]] | [[List]]<[[Unit]]> |  | |
+| [[CombatManager#^getunitsat\|GetUnitsAt()]] | [[List]]<[[Unit]]> | [[GridItem]] position, [[Int]] area | |
+| [[CombatManager#^spawnunit\|SpawnUnit()]] | [[Unit]] | [[Character]] c, [[Team]] team, [[GridItem]] position |  |
+| [[CombatManager#^removeunit\|RemoveUnit()]] | [[Bool]] | [[GridItem]] position |  |
 
-### GetUnits () : [[List]]<[[Character]]>
+### GetUnit ([[GridItem]] position) : [[Unit]]
+
+^getunit
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `position` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Unit]].
+
+### GetUnit2 ([[Int]] x, [[Int]] y) : [[Unit]]
+
+^getunit2
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `x` This is a parameter.
+> 2. `y` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Unit]].
+
+### GetUnits () : [[List]]<[[Unit]]>
 
 ^getunits
 
 Description goes here.
 
 > [!Success]+ Return value
-> Returns a [[List]]<[[Character]]>.
+> Returns a [[ETS API/Type/List]]<[[Character]]>.
 
-### SpawnUnit ([[Character]] c, [[GridItem]] pos) : [[CharacterVisuals]]
+### GetDeadUnits () : [[List]]<[[Unit]]>
+
+^getdeadunits
+
+Description goes here.
+
+> [!Success]+ Return value
+> Returns a [[List]]<[[Unit]]>.
+
+### GetUnitsAt ([[GridItem]] position, [[Int]] area) : [[List]]<[[Unit]]>
+
+^getunitsat
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `position` This is a parameter.
+> 2. `area` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[List]]<[[Unit]]>.
+
+### SpawnUnit ([[Character]] c, [[Team]] team, [[GridItem]] position) : [[Unit]]
 
 ^spawnunit
 
@@ -37,33 +89,20 @@ Description goes here.
 
 > [!Abstract]+ Parameters
 > 1. `c` This is a parameter.
-> 2. `pos` This is a parameter.
+> 2. `team` This is a parameter.
+> 3. `position` This is a parameter.
 
 > [!Success]+ Return value
 > Returns a [[CharacterVisuals]].
 
-### SpawnUnit2 ([[Character]] c, [[Int]] x, [[Int]] y) : [[CharacterVisuals]]
-
-^spawnunit2
-
-Description goes here.
-
-> [!Abstract]+ Parameters
-> 1. `c` This is a parameter.
-> 2. `x` This is a parameter.
-> 3. `y` This is a parameter.
-
-> [!Success]+ Return value
-> Returns a [[CharacterVisuals]].
-
-### RemoveUnit ([[Character]] c) : [[Bool]]
+### RemoveUnit ([[GridItem]] position) : [[Bool]]
 
 ^removeunit
 
 Description goes here.
 
 > [!Abstract]+ Parameters
-> 1. `c` This is a parameter.
+> 1. `position` This is a parameter.
 
 > [!Success]+ Return value
 > Returns a [[Bool]].

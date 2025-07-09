@@ -20,11 +20,11 @@ Description goes here.
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
 | [[CombatEffectInstance#^scaleddamage\|ScaledDamage()]] | [[Damage]] | [[Character]] u |  |
-| [[CombatEffectInstance#^scaledvalue\|ScaledValue()]] | [[Int]] | [[Character]] u | |
+| [[CombatEffectInstance#^scaledvalue\|ScaledValue()]] | [[Int]] | [[Character]] u |  |
 | [[CombatEffectInstance#^finish\|Finish()]] | [[Void]] |  |  |
 | [[CombatEffectInstance#^spawnprojectile\|SpawnProjectile()]] | [[Projectile]] | [[GridItem]] target, [[String]] image, [[Function]] callback |  |
 | [[CombatEffectInstance#^spawnprojectilec\|SpawnProjectileC()]] | [[Projectile]] | [[Character]] target, [[String]] image, [[Function]] callback |  |
-| [[CombatEffectInstance#^spawnprojectileat\|SpawnProjectileAt()]] | [[Projectile]] | [[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback | |
+| [[CombatEffectInstance#^spawnprojectileat\|SpawnProjectileAt()]] | [[Projectile]] | [[Vector3D]] spawn, [[Vector3D]] target, [[String]] image, [[Function]] callback |  |
 | [[CombatEffectInstance#^queueaction\|QueueAction()]] | [[Void]] | [[AnimationListener]] listener, [[Function]] callback |  |
 | [[CombatEffectInstance#^waitforanimation\|WaitForAnimation()]] | [[Void]] | [[AnimationListener]] listener, [[Function]] callback |  |
 | [[CombatEffectInstance#^waitforprojectiles\|WaitForProjectiles()]] | [[Void]] | [[Function]] callback |  |

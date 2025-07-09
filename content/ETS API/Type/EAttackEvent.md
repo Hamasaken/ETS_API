@@ -13,8 +13,9 @@ Description goes here.
 | type | [[EventType]] | True |  |
 | stopped | [[Bool]] | True |  |
 | c | [[Character]] | False |  |
+| character | [[Character]] | False |  |
 | attack | [[Attack]] | False |  |
-| t | [[Character]] | False |  |
+| target | [[Character]] | False |  |
 
 ## Functions
 | Name | Return type | Parameters | Note |

@@ -13,6 +13,7 @@ Description goes here.
 | type | [[EventType]] | True |  |
 | stopped | [[Bool]] | True |  |
 | c | [[Character]] | False |  |
+| character | [[Character]] | False |  |
 | stat | [[StatType]] | False |  |
 | action | [[StatAction]] | False |  |
 | value | [[Int]] | False |  |

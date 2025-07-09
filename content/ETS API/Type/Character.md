@@ -10,11 +10,12 @@ Description goes here.
 ## Variables
 | Name | Type | Readonly | Note |
 | ---- | ---- | -------- | ---- |
-| id | [[String]] | False |  |
-| name | [[String]] | False |  |
+| id | [[String]] | False | |
+| name | [[String]] | False | |
 | visuals | [[CharacterVisuals]] | True |  |
-| position | [[GridItem]] | False |  |
-| team | [[Team]] | False |  |
+| unit | [[Unit]] | True |  |
+| eventImage | [[String]] | False |  |
+| combatImage | [[String]] | False |  |
 
 ## Functions
 | Name | Return type | Parameters | Note |
@@ -29,20 +30,19 @@ Description goes here.
 | [[Character#^stat\|Stat()]] | [[Stat]] | [[StatType]] stat |  |
 | [[Character#^getstat\|GetStat()]] | [[Int]] | [[StatType]] stat |  |
 | [[Character#^setstat\|SetStat()]] | [[Void]] | [[StatType]] stat, [[Int]] value |  |
-| [[Character#^changestat\|ChangeStat()]] | [[Void]] | [[StatType]] stat, [[StatAction]] action, [[Int]] value |  |
 | [[Character#^hasstatus\|HasStatus()]] | [[Bool]] | [[String]] id |  |
-| [[Character#^getstatus\|GetStatus()]] | [[StatusEffect]] | [[String]] id |  |
-| [[Character#^addstatus\|AddStatus()]] | [[Bool]] | [[StatusEffect]] status |  |
-| [[Character#^removestatus\|RemoveStatus()]] | [[Bool]] | [[StatusEffect]] status |  |
+| [[Character#^getstatus\|GetStatus()]] | [[Status]] | [[String]] id |  |
+| [[Character#^addstatus\|AddStatus()]] | [[Bool]] | [[Status]] status |  |
+| [[Character#^removestatus\|RemoveStatus()]] | [[Bool]] | [[Status]] status |  |
 | [[Character#^gethitchance\|GetHitChance()]] | [[Float]] | [[Attack]] attack |  |
 | [[Character#^getevadechance\|GetEvadeChance()]] | [[Float]] |  |  |
-| [[Character#^performattack\|PerformAttack()]] | [[Bool]] | [[Character]] target, [[Attack]] attack, [[Damage]] damage |  |
-| [[Character#^performattackgroup\|PerformAttackGroup()]] | [[List]]<[[Character]]> | [[TargetingResult]] targets, [[Attack]] attack, [[Damage]] damage |  |
+| [[Character#^attack\|Attack()]] | [[Bool]] | [[Character]] target, [[Attack]] attack, [[Damage]] damage |  |
+| [[Character#^attacktarget\|AttackTarget()]] | [[List]]<[[Character]]> | [[Target]] target, [[Attack]] attack, [[Damage]] damage |  |
+| [[Character#^attacktargets\|AttackTargets()]] | [[List]]<[[Character]]> | [[List]]<[[Target]]> targets, [[Attack]] attack, [[Damage]] damage |  |
 | [[Character#^takedamage\|TakeDamage()]] | [[Void]] | [[Damage]] damage |  |
 | [[Character#^takedamage2\|TakeDamage2()]] | [[Void]] | [[Int]] value, [[DamageType]] type, [[Bool]] pen |  |
 | [[Character#^healdamage\|HealDamage()]] | [[Void]] | [[Int]] value |  |
-| [[Character#^isally\|IsAlly()]] | [[Bool]] | [[Character]] character |  |
-| [[Character#^isenemy\|IsEnemy()]] | [[Bool]] | [[Character]] character |  |
+| [[Character#^scaledvalue\|ScaledValue()]] | [[Int]] | [[StatType]] stat, [[Float]] multiplier |  |
 
 ### Is ([[FlagType]] flag) : [[Bool]]
 
@@ -154,17 +154,6 @@ Description goes here.
 > 1. `stat` This is a parameter.
 > 2. `value` This is a parameter.
 
-### ChangeStat ([[StatType]] stat, [[StatAction]] action, [[Int]] value) : [[Void]]
-
-^changestat
-
-Description goes here.
-
-> [!Abstract]+ Parameters
-> 1. `stat` This is a parameter.
-> 2. `action` This is a parameter.
-> 3. `value` This is a parameter.
-
 ### HasStatus ([[String]] id) : [[Bool]]
 
 ^hasstatus
@@ -177,7 +166,7 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[Bool]].
 
-### GetStatus ([[String]] id) : [[StatusEffect]]
+### GetStatus ([[String]] id) : [[Status]]
 
 ^getstatus
 
@@ -189,7 +178,7 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[StatusEffect]].
 
-### AddStatus ([[StatusEffect]] status) : [[Bool]]
+### AddStatus ([[Status]] status) : [[Bool]]
 
 ^addstatus
 
@@ -201,7 +190,7 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[Bool]].
 
-### RemoveStatus ([[StatusEffect]] status) : [[Bool]]
+### RemoveStatus ([[Status]] status) : [[Bool]]
 
 ^removestatus
 
@@ -234,24 +223,37 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[Float]].
 
-### PerformAttack ([[Character]] target, [[Attack]] attack, [[Damage]] damage) : [[Bool]]
+### Attack ([[Character]] target, [[Attack]] attack, [[Damage]] damage) : [[Bool]]
 
-^performattack
+^attack
 
-Makes this character attempt to attack a target character using the [[Attack]] values.
-If the attack hits, and the damage parameter has been set, then the game also deals the damage to the target.
+Description goes here.
 
 > [!Abstract]+ Parameters
 > 1. `target` This is a parameter.
-> 2. `attack` Settings for hitchance and [[AttackType]].
-> 3. `damage` Settings for damage amount and [[DamageType]].
+> 2. `attack` This is a parameter.
+> 3. `damage` This is a parameter.
 
 > [!Success]+ Return value
 > Returns a [[Bool]].
 
-### PerformAttackGroup ([[TargetingResult]] targets, [[Attack]] attack, [[Damage]] damage) : [[List]]<[[Character]]>
+### AttackTarget ([[Target]] target, [[Attack]] attack, [[Damage]] damage) : [[List]]<[[Character]]>
 
-^performattackgroup
+^attacktarget
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `target` This is a parameter.
+> 2. `attack` This is a parameter.
+> 3. `damage` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[List]]<[[Character]]>.
+
+### AttackTargets ([[List]]<[[Target]]> targets, [[Attack]] attack, [[Damage]] damage) : [[List]]<[[Character]]>
+
+^attacktargets
 
 Description goes here.
 
@@ -292,27 +294,16 @@ Description goes here.
 > [!Abstract]+ Parameters
 > 1. `value` This is a parameter.
 
-### IsAlly ([[Character]] character) : [[Bool]]
+### ScaledValue ([[StatType]] stat, [[Float]] multiplier) : [[Int]]
 
-^isally
-
-Description goes here.
-
-> [!Abstract]+ Parameters
-> 1. `character` This is a parameter.
-
-> [!Success]+ Return value
-> Returns a [[Bool]].
-
-### IsEnemy ([[Character]] character) : [[Bool]]
-
-^isenemy
+^scaledvalue
 
 Description goes here.
 
 > [!Abstract]+ Parameters
-> 1. `character` This is a parameter.
+> 1. `stat` This is a parameter.
+> 2. `multiplier` This is a parameter.
 
 > [!Success]+ Return value
-> Returns a [[Bool]].
+> Returns a [[Int]].
 

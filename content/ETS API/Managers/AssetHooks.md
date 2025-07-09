@@ -14,21 +14,10 @@ Description goes here.
 ## Functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[AssetHooks#^spawncharacter\|SpawnCharacter()]] | [[Character]] | [[String]] id | |
-| [[AssetHooks#^spawnability\|SpawnAbility()]] | [[Ability]] | [[String]] id | |
-| [[AssetHooks#^spawnstatus\|SpawnStatus()]] | [[StatusEffect]] | [[String]] id | |
-
-### SpawnCharacter ([[String]] id) : [[Character]]
-
-^spawncharacter
-
-Description goes here.
-
-> [!Abstract]+ Parameters
-> 1. `id` This is a parameter.
-
-> [!Success]+ Return value
-> Returns a [[Character]].
+| [[AssetHooks#^spawnability\|SpawnAbility()]] | [[Ability]] | [[String]] id |  |
+| [[AssetHooks#^spawncharacter\|SpawnCharacter()]] | [[Character]] | [[String]] id |  |
+| [[AssetHooks#^spawnitem\|SpawnItem()]] | [[Item]] | [[String]] id |  |
+| [[AssetHooks#^spawnstatus\|SpawnStatus()]] | [[Status]] | [[String]] id |  |
 
 ### SpawnAbility ([[String]] id) : [[Ability]]
 
@@ -42,7 +31,31 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[Ability]].
 
-### SpawnStatus ([[String]] id) : [[StatusEffect]]
+### SpawnCharacter ([[String]] id) : [[Character]]
+
+^spawncharacter
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `id` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Character]].
+
+### SpawnItem ([[String]] id) : [[Item]]
+
+^spawnitem
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `id` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Item]].
+
+### SpawnStatus ([[String]] id) : [[Status]]
 
 ^spawnstatus
 

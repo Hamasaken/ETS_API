@@ -14,6 +14,7 @@ Placeholder description for FlagType.
 | 0 | Default  |  |
 | 1 | Alive  |  |
 | 2 | PlayerControlled  |  |
+| 3 | Ranged | |
 | 10 | Flying  |  |
 | 100000 | Swimming  |  |
 | 100001 | Restrained  |  |

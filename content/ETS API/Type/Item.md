@@ -14,8 +14,8 @@ Description goes here.
 | name | [[String]] | False |  |
 | image | [[String]] | False |  |
 | description | [[String]] | False |  |
-| useHint | [[String]] | False |  |
 | consumeHint | [[String]] | False |  |
+| useHint | [[String]] | False |  |
 | equipHint | [[String]] | False |  |
 
 ## Functions
@@ -29,8 +29,13 @@ Description goes here.
 | [[Item#^hastrait\|HasTrait()]] | [[Bool]] | [[TraitType]] trait |  |
 | [[Item#^addtrait\|AddTrait()]] | [[Bool]] | [[TraitType]] trait |  |
 | [[Item#^removetrait\|RemoveTrait()]] | [[Bool]] | [[TraitType]] trait |  |
-| [[Item#^onuse\|OnUse()]] | [[Void]] | [[Character]] c |  |
+| [[Item#^finish\|Finish()]] | [[Void]] |  |  |
+| [[Item#^canconsume\|CanConsume()]] | [[Bool]] | [[Character]] c |  |
+| [[Item#^canuse\|CanUse()]] | [[Bool]] | [[Character]] c |  |
+| [[Item#^canequip\|CanEquip()]] | [[Bool]] | [[Character]] c |  |
+| [[Item#^canunequip\|CanUnequip()]] | [[Bool]] | [[Character]] c |  |
 | [[Item#^onconsume\|OnConsume()]] | [[Void]] | [[Character]] c |  |
+| [[Item#^onuse\|OnUse()]] | [[Void]] | [[Character]] c |  |
 | [[Item#^onequip\|OnEquip()]] | [[Void]] | [[Character]] c |  |
 | [[Item#^onunequip\|OnUnequip()]] | [[Void]] | [[Character]] c |  |
 
@@ -119,18 +124,72 @@ Description goes here.
 > [!Success]+ Return value
 > Returns a [[Bool]].
 
-### OnUse ([[Character]] c) : [[Void]]
+### Finish () : [[Void]]
 
-^onuse
+^finish
+
+Description goes here.
+
+### CanConsume ([[Character]] c) : [[Bool]]
+
+^canconsume
 
 Description goes here.
 
 > [!Abstract]+ Parameters
 > 1. `c` This is a parameter.
 
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### CanUse ([[Character]] c) : [[Bool]]
+
+^canuse
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `c` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### CanEquip ([[Character]] c) : [[Bool]]
+
+^canequip
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `c` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
+### CanUnequip ([[Character]] c) : [[Bool]]
+
+^canunequip
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `c` This is a parameter.
+
+> [!Success]+ Return value
+> Returns a [[Bool]].
+
 ### OnConsume ([[Character]] c) : [[Void]]
 
 ^onconsume
+
+Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `c` This is a parameter.
+
+### OnUse ([[Character]] c) : [[Void]]
+
+^onuse
 
 Description goes here.
 

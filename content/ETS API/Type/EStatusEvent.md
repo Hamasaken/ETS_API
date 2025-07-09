@@ -13,7 +13,8 @@ Description goes here.
 | type | [[EventType]] | True |  |
 | stopped | [[Bool]] | True |  |
 | c | [[Character]] | False |  |
-| status | [[StatusEffect]] | False |  |
+| character | [[Character]] | False |  |
+| status | [[Status]] | False |  |
 
 ## Functions
 | Name | Return type | Parameters | Note |

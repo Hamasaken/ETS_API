@@ -117,5 +117,5 @@ Description goes here.
 > 2. `count` This is a parameter.
 
 > [!Success]+ Return value
-> Returns a [[List]]<[[String]]>.
+> Returns a [[ETS API/Type/List]]<[[String]]>.
 

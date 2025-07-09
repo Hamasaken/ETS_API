@@ -14,6 +14,7 @@ Every character in the game has a set of statistics that determines their gamepl
 | 1 | [[Mana]] | 0  |  |
 | 2 | [[Speed]] | 15  |  |
 | 3 | [[Movement]] | 35  |  |
+| 4 | [[Actions]] | 1  |  |
 | 10 | [[Defense]] | 0  |  |
 | 11 | [[Resistance]] | 0  |  |
 | 12 | [[Accuracy]] | 0  |  |

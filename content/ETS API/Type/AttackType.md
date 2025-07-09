@@ -14,3 +14,4 @@ Placeholder description for AttackType.
 | 0 | Melee  |  |
 | 1 | Ranged  |  |
 | 2 | Magical  |  |
+| 3 | Special | |
