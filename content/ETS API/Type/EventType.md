@@ -7,7 +7,7 @@ tags:
 
 Some gameplay effects raise events when they occur. It is possible to listen for these types of events by creating an [[EventListener]], and running a triggered [[Function]] in response to them. An [[EventListener]] needs to be assigned a single [[EventType]] to listen for. When an event of the matching type is raised, the listener will trigger.
 
-Eg:
+Example:
 ```js
 var s = new StatusEffect(1);
 s.name = "Stun";
@@ -23,6 +23,7 @@ t.AddStatus(s);
 
 > [!Hint]
 > By using [[EEvent#^stop|EEvent.Stop()]] within [[EventListener#^do|EventListener.Do()]], it is possible to interrupt a raised event before it has time to happen. For most (but not all) event types, this will prevent the event from taking place.
+
 
 ## Values
 | Id  | Name          | Description                                                                                                                                                    |

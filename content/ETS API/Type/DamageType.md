@@ -5,7 +5,8 @@ tags:
  - ClassEnum
 ---
 
-Damage types represent different kinds of elements for the abilities in the game. Certain characters might have immunities or weaknesses to various damage types.
+The damage in [[Endless Tides]] can have several different elemental types. Certain characters might have immunities or weaknesses to specific damage types, and other effects might depend on them as well.
+
 
 ## Values
 | id  | name     | description |

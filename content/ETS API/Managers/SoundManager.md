@@ -5,7 +5,14 @@ tags:
  - ScriptObject
 ---
 
-Description goes here.
+Can be used in any script through the global alias "Sound".
+
+Example:
+```js
+// Play the sound of walking through bushes with a random pitch
+Sound.PlaySound("sfx/bush1.wav", true);
+```
+
 
 ## Variables
 | Name | Type | Readonly | Note |

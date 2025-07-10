@@ -5,7 +5,15 @@ tags:
  - ScriptObject
 ---
 
-Description goes here.
+Can be used in any script through the global alias "Combat".
+
+Example:
+```js
+// Code for a summon in combat
+var c = Asset.SpawnCharacter("bob");
+Combat.SpawnUnit(c, u.unit.team, summonLocation);
+```
+
 
 ## Variables
 | Name | Type | Readonly | Note |

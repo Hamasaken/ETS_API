@@ -5,7 +5,9 @@ tags:
  - ClassEnum
 ---
 
-Placeholder description for FlagType.
+Flags is a character specific field that tracks [[Bool]] values.
+
+We recommend not messing with flags for now, since they might be changed in the near future.
 
 
 ## Values

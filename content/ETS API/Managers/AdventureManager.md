@@ -5,7 +5,14 @@ tags:
  - ScriptObject
 ---
 
-Description goes here.
+Can be used in any script through the global alias "Adventure".
+
+Example:
+```js
+var c = Asset.SpawnCharacter("bob");
+Adventure.party.Add(c);
+```
+
 
 ## Variables
 | Name | Type | Readonly | Note |

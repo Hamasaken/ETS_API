@@ -5,7 +5,14 @@ tags:
  - ScriptObject
 ---
 
-Description goes here.
+Can be used in any script through the global alias "Asset".
+
+Example:
+```js
+var c = Asset.SpawnCharacter("bob");
+var itm = Asset.SpawnItem("fun_bomb");
+```
+
 
 ## Variables
 | Name | Type | Readonly | Note |

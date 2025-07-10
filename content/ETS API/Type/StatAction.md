@@ -5,7 +5,9 @@ tags:
  - ClassEnum
 ---
 
-Placeholder description for StatAction.
+StatAction's are not fully supported yet and might be implemented in a very different way.
+
+We recommend not messing with them for now, since they might be changed in the near future.
 
 
 ## Values

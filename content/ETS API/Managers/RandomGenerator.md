@@ -5,7 +5,14 @@ tags:
  - ScriptObject
 ---
 
-Description goes here.
+Can be used in any script through the global alias "Random".
+
+Example:
+```js
+// Will set 'a' to a random integer between 0 and 10 (but not including 10)
+var a:Int = Random.Int(0, 10);
+```
+
 
 ## Variables
 | Name | Type | Readonly | Note |
