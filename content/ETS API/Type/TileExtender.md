@@ -16,10 +16,10 @@ Description goes here.
 | ---- | ----------- | ---------- | ---- |
 | [[TileExtender#^getx\|GetX()]] | [[Int]] |  |  |
 | [[TileExtender#^gety\|GetY()]] | [[Int]] |  |  |
-| [[TileExtender#^gettype\|GetType()]] | [[TileType]] |  | |
-| [[TileExtender#^getmaxcost\|GetMaxCost()]] | [[Int]] |  | |
-| [[TileExtender#^getcost\|GetCost()]] | [[Int]] | [[Unit]] unit | |
-| [[TileExtender#^getcostc\|GetCostC()]] | [[Int]] | [[Character]] character | |
+| [[TileExtender#^gettype\|GetType()]] | [[TileType]] |  |  |
+| [[TileExtender#^getmaxcost\|GetMaxCost()]] | [[Int]] |  |  |
+| [[TileExtender#^getcost\|GetCost()]] | [[Int]] | [[Unit]] unit |  |
+| [[TileExtender#^getcostc\|GetCostC()]] | [[Int]] | [[Character]] character |  |
 
 ### GetX () : [[Int]]
 

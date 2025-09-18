@@ -3,9 +3,15 @@ title: Bool
 draft: false
 tags:
  - ScriptObject
+ - Primitive
+aliases:
+ - true
+ - false
+ - boolean
 ---
 
-Description goes here.
+A Bool is a primitive variable representing the binary value of either ``true`` or ``false``.
+
 
 ## Variables
 | Name | Type | Readonly | Note |

@@ -3,6 +3,9 @@ title: Item
 draft: false
 tags:
  - ScriptObject
+aliases:
+ - item
+ - items
 ---
 
 Description goes here.

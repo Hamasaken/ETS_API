@@ -46,7 +46,6 @@ ETScript is a softly typed scripting language. Behind the scenes, all of the dat
 | 100 | [[Stat]]  |  |
 | 101 | [[Trait]]  |  |
 | 102 | [[Flag]]  |  |
-| 103 | [[Team]]  |  |
 | 200 | [[Character]]  | This is just a guy. |
 | 201 | [[Unit]]  |  |
 | 210 | [[Ability]]  |  |
@@ -70,6 +69,7 @@ ETScript is a softly typed scripting language. Behind the scenes, all of the dat
 | 307 | [[AttackType]]  |  |
 | 308 | [[FlagType]]  |  |
 | 309 | [[TileType]]  |  |
+| 310 | [[Team]]  |  |
 | 400 | [[Vector2D]]  |  |
 | 401 | [[Vector3D]]  |  |
 | 402 | [[GridItem]]  |  |

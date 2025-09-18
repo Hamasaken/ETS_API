@@ -10,8 +10,8 @@ Description goes here.
 ## Variables
 | Name | Type | Readonly | Note |
 | ---- | ---- | -------- | ---- |
-| id | [[String]] | False | |
-| name | [[String]] | False | |
+| id | [[String]] | False |  |
+| name | [[String]] | False |  |
 | visuals | [[CharacterVisuals]] | True |  |
 | unit | [[Unit]] | True |  |
 | eventImage | [[String]] | False |  |

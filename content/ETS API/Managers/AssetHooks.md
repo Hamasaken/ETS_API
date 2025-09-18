@@ -5,6 +5,8 @@ tags:
  - ScriptObject
 ---
 
+The asset hooks are a set of functions for spawning and managing instances of assets.
+
 Can be used in any script through the global alias "Asset".
 
 Example:
@@ -30,47 +32,47 @@ var itm = Asset.SpawnItem("fun_bomb");
 
 ^spawnability
 
-Description goes here.
+Creates a new instance of an ability asset.
 
 > [!Abstract]+ Parameters
-> 1. `id` This is a parameter.
+> 1. `id` The id of the ability to spawn.
 
 > [!Success]+ Return value
-> Returns a [[Ability]].
+> Returns the newly created [[Ability]] instance.
 
 ### SpawnCharacter ([[String]] id) : [[Character]]
 
 ^spawncharacter
 
-Description goes here.
+Creates a new instance of a character asset.
 
 > [!Abstract]+ Parameters
-> 1. `id` This is a parameter.
+> 1. `id` The id of the character to spawn.
 
 > [!Success]+ Return value
-> Returns a [[Character]].
+> Returns the newly created [[Character]] instance.
 
 ### SpawnItem ([[String]] id) : [[Item]]
 
 ^spawnitem
 
-Description goes here.
+Creates a new instance of an item asset.
 
 > [!Abstract]+ Parameters
-> 1. `id` This is a parameter.
+> 1. `id` The id of the item to spawn.
 
 > [!Success]+ Return value
-> Returns a [[Item]].
+> Returns the newly created [[Item]] instance.
 
 ### SpawnStatus ([[String]] id) : [[Status]]
 
 ^spawnstatus
 
-Description goes here.
+Creates a new instance of a status asset.
 
 > [!Abstract]+ Parameters
-> 1. `id` This is a parameter.
+> 1. `id` The id of the status to spawn.
 
 > [!Success]+ Return value
-> Returns a [[StatusEffect]].
+> Returns the newly created [[Status]] instance.
 

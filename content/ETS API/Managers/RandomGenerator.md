@@ -21,14 +21,18 @@ var a:Int = Random.Int(0, 10);
 ## Functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[RandomGenerator#^int\|Int()]] | [[Int]] |  |  |
+| [[RandomGenerator#^int\|Int()]] | [[Int]] | [[Int]] min, [[Int]] max |  |
 | [[RandomGenerator#^float\|Float()]] | [[Float]] | [[Float]] min, [[Float]] max |  |
 
-### Int () : [[Int]]
+### Int ([[Int]] min, [[Int]] max) : [[Int]]
 
 ^int
 
 Description goes here.
+
+> [!Abstract]+ Parameters
+> 1. `min` This is a parameter.
+> 2. `max` This is a parameter.
 
 > [!Success]+ Return value
 > Returns a [[Int]].
