@@ -1,1 +1,0 @@
-"Null" is the absence of a value for a variable. It is not an actual [[Type]].
