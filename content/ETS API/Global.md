@@ -13,17 +13,17 @@ Be aware that these members can be hidden if the same names are used by other [[
 ## Script variables
 | Name          | Type      | Readonly | Note |
 | ------------- | --------- | -------- | ---- |
-| [[Asset]]     | [[Scope]] | True     |      |
-| [[Adventure]] | [[Scope]] | True     |      |
-| A             | [[Scope]] | True     |      |
-| [[Combat]]    | [[Scope]] | True     |      |
-| C             | [[Scope]] | True     |      |
-| [[Event]]     | [[Scope]] | True     |      |
-| E             | [[Scope]] | True     |      |
-| [[Sound]]     | [[Scope]] | True     |      |
-| S             | [[Scope]] | True     |      |
-| [[Math]]      | [[Scope]] | True     |      |
-| [[Random]]    | [[Scope]] | True     |      |
+| [[Asset]] | [[Scope]] | True | Spawn fresh characters, items, abilities and statuses. |
+| [[Adventure]] | [[Scope]] | True | The overworld journey, party and inventory. |
+| A | [[Scope]] | True | Shorthand alias for [[Adventure]]. |
+| [[Combat]] | [[Scope]] | True | The current fight — units, the map and turns. |
+| C | [[Scope]] | True | Shorthand alias for [[Combat]]. |
+| [[Event]] | [[Scope]] | True | Raise game events and register listeners. |
+| E | [[Scope]] | True | Shorthand alias for [[Event]]. |
+| [[Sound]] | [[Scope]] | True | Play music, ambience and sound effects. |
+| S | [[Scope]] | True | Shorthand alias for [[Sound]]. |
+| [[Math]] | [[Scope]] | True | Number helpers — rounding, min/max, powers and more. |
+| [[Random]] | [[Scope]] | True | Random numbers for chances and rolls. |
 
 
 ## Script functions

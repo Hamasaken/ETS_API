@@ -24,38 +24,44 @@ Event.Register(listener);
 ## Script functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[Event#^raiseevent1805716478\|RaiseEvent()]] | [[Bool]] | [[EventData]] eventData |  |
-| [[Event#^register1709452510\|Register()]] | [[Void]] | [[EventListener]] listener |  |
-| [[Event#^remove-980187733\|Remove()]] | [[Void]] | [[EventListener]] listener |  |
+| [[Event#^raiseevent1805716478\|RaiseEvent()]] | [[Bool]] | [[EventData]] eventData | Announces an event to all listeners. |
+| [[Event#^register1709452510\|Register()]] | [[Void]] | [[EventListener]] listener | Starts a listener watching for events. |
+| [[Event#^remove-980187733\|Remove()]] | [[Void]] | [[EventListener]] listener | Stops a listener. |
 
 
 ### RaiseEvent ([[EventData]] eventData) : [[Bool]]
 
 ^raiseevent1805716478
 
-This is a function.
+Announces a game event to every listener, giving them a chance to react to it or to cancel it. Use it to fire your own custom events that other scripts can respond to.
 
 > [!Abstract]+ Parameters
-> 1. `eventData` This is a parameter.
+> 1. `eventData` The event to announce, carrying its details.
 
 > [!Success]+ Return value
-> Returns a [[Bool]].
+> Returns true if the event may go ahead, or false if a listener cancelled it.
 
 ### Register ([[EventListener]] listener) : [[Void]]
 
 ^register1709452510
 
-This is a function.
+Starts a listener watching for its event type, so it begins reacting when matching events happen.
+
+> [!Example]+ Example
+> Register a listener created for a combat summon:
+> ```js
+> Event.Register(listener);
+> ```
 
 > [!Abstract]+ Parameters
-> 1. `listener` This is a parameter.
+> 1. `listener` The listener to start.
 
 ### Remove ([[EventListener]] listener) : [[Void]]
 
 ^remove-980187733
 
-This is a function.
+Stops a listener, so it no longer reacts to events. Use it to clean up a listener you registered once it's no longer needed.
 
 > [!Abstract]+ Parameters
-> 1. `listener` This is a parameter.
+> 1. `listener` The listener to stop.
 

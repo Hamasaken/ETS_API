@@ -8,7 +8,7 @@ tags:
 ---
 # TraitType : [[ClassEnum]]
 
-Description goes here.
+The individual traits a [[Character]] or [[Item]] can have — Human, Undead, Weapon, Fire, and so on. Traits are arranged in a hierarchy (each may have a broader parent) and belong to a [[TraitGroup]]. New traits are loaded from asset files, where each trait's own description is set.
 
 ## Enum values
 | Id     | Name             | Parent         | Trait group                              | Description                                                                        |
@@ -71,14 +71,14 @@ Description goes here.
 ## Prototype variables
 | Name | Type | Readonly | Note |
 | ---- | ---- | -------- | ---- |
-| group | [[TraitGroup]] | True |  |
-| parent | [[TraitType]] | True |  |
+| group | [[TraitGroup]] | True | The trait group this trait belongs to. |
+| parent | [[TraitType]] | True | The broader trait this one is a specific kind of, if any. |
 
 ## Script variables
 | Name | Type | Readonly | Note |
 | ---- | ---- | -------- | ---- |
-| OnApply | [[Function]] | False |  |
-| OnRemove | [[Function]] | False |  |
+| OnApply | [[Function]] | False | Runs when the trait is applied to a character. |
+| OnRemove | [[Function]] | False | Runs when the trait is removed from a character. |
 
 
 ## Static functions

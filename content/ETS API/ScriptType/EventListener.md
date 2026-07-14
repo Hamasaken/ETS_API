@@ -7,7 +7,7 @@ tags:
 ---
 # EventListener : [[Any]]
 
-Description goes here.
+An EventListener watches for a particular kind of game event (its [[EventType]]) and reacts when one happens. Its `If` script decides whether a given occurrence is relevant, and its `Do` script carries out the response. Traits, statuses and items add listeners to change how the game behaves; when several are watching the same event, higher-priority ones react first.
 
 ## Static variables
 | Name | Type | Readonly | Note |
@@ -16,14 +16,14 @@ Description goes here.
 ## Prototype variables
 | Name | Type | Readonly | Note |
 | ---- | ---- | -------- | ---- |
-| type | [[EventType]] | True |  |
-| priority | [[Int]] | False |  |
+| type | [[EventType]] | True | Which kind of event this listener reacts to. |
+| priority | [[Int]] | False | Run order; higher priority reacts first. |
 
 ## Script variables
 | Name | Type | Readonly | Note |
 | ---- | ---- | -------- | ---- |
-| If | [[Function]] | False |  |
-| Do | [[Function]] | False |  |
+| If | [[Function]] | False | Your check for whether to respond to this event. |
+| Do | [[Function]] | False | Your response, run when the If check passes. |
 
 
 ## Static functions

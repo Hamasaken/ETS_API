@@ -6,7 +6,7 @@ tags:
 ---
 # Any
 
-Description goes here.
+Any means "a value of any type". It's the common ancestor of every other type in the language, so wherever something is described as an Any it can hold a number, some text, a unit, a list — anything at all. You'll see Any used where a function accepts or returns a value whose exact type isn't fixed in advance, such as the items stored in a [[List]].
 
 ## Static variables
 | Name | Type | Readonly | Note |
@@ -24,7 +24,7 @@ Description goes here.
 ## Prototype functions
 | Name | Return type | Parameters | Note |
 | ---- | ----------- | ---------- | ---- |
-| [[Any#^tostring-1865520797\|ToString()]] | [[String]] |  |  |
+| [[Any#^tostring-1865520797\|ToString()]] | [[String]] |  | Turns the value into readable text. |
 
 
 
@@ -32,8 +32,8 @@ Description goes here.
 
 ^tostring-1865520797
 
-This is a function.
+Produces a readable text version of the value, handy for building messages or for logging. Text is shown in quotes, lists and dictionaries are laid out neatly, and an empty value becomes the word `null`.
 
 > [!Success]+ Return value
-> Returns a [[String]].
+> Returns the value written out as text.
 

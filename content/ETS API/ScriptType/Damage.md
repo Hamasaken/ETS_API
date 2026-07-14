@@ -6,7 +6,7 @@ tags:
 ---
 # Damage : [[Any]]
 
-Description goes here.
+A Damage bundles up a hit dealt to a [[Character]]: how much (`value`), what kind (`type`, such as Fire or Physical), and whether it ignores armour (`pen`). Effects build a Damage and deal it with [[Character#^takedamage-638525238\|TakeDamage()]]; unless it penetrates, the character's Defense reduces it first.
 
 ## Static variables
 | Name | Type | Readonly | Note |
@@ -15,9 +15,9 @@ Description goes here.
 ## Prototype variables
 | Name | Type | Readonly | Note |
 | ---- | ---- | -------- | ---- |
-| type | [[DamageType]] | False |  |
-| value | [[Int]] | False |  |
-| pen | [[Bool]] | False |  |
+| type | [[DamageType]] | False | The kind of damage (Physical, Fire, Frost…). |
+| value | [[Int]] | False | How much damage this deals (never below 0). |
+| pen | [[Bool]] | False | When true, ignores the target's Defense. |
 
 
 ## Static functions

@@ -13,13 +13,13 @@ The damage in [[ETS API/Endless Tides]] can have several different elemental typ
 ## Enum values
 | Id  | Name    | Description |
 | --- | --- | --- |
-| 0 | Void  |  |
-| 1 | Physical  |  |
-| 2 | Fire  |  |
-| 3 | Frost  |  |
-| 4 | Nature  |  |
-| 5 | Holy  |  |
-| 6 | Necrotic  |  |
-| 7 | Electric  |  |
+| 0 | Void  | Untyped, generic damage. |
+| 1 | Physical  | Ordinary physical harm. |
+| 2 | Fire  | Burning, flame damage. |
+| 3 | Frost  | Cold and ice damage. |
+| 4 | Nature  | Poison and natural damage. |
+| 5 | Holy  | Radiant, divine damage. |
+| 6 | Necrotic  | Death and decay damage. |
+| 7 | Electric  | Lightning damage. |
 
 

@@ -75,7 +75,7 @@ ETScript is a softly typed scripting language. Behind the scenes, all of the dat
 | 530 | [[Movement]] | [[Any]]  |  |
 | 1000 | [[Vector2D]] | [[Any]]  |  |
 | 1001 | [[Vector3D]] | [[Any]]  |  |
-| 1101 | [[AnimationListener]] | [[Any]]  |  |
+| 1100 | [[AnimationListener]] | [[Any]]  |  |
 | 1101 | [[CharacterVisuals]] | [[AnimationListener]]  |  |
 | 1102 | [[UnitVisuals]] | [[CharacterVisuals]]  |  |
 | 1110 | [[Projectile]] | [[Any]]  |  |

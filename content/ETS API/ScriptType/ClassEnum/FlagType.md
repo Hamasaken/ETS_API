@@ -15,12 +15,12 @@ We recommend not messing with flags for now, since they might be changed in the 
 ## Enum values
 | Id     | Name             | Description |
 | ------ | ---------------- | ----------- |
-| 0 | Default  |  |
-| 1 | Alive  |  |
-| 2 | PlayerControlled  |  |
-| 3 | Ranged  |  |
-| 10 | Flying  |  |
-| 100000 | Swimming  |  |
-| 100001 | Restrained  |  |
+| 0 | Default  | A catch-all default flag. |
+| 1 | Alive  | Set while the character is alive; cleared when health reaches 0. |
+| 2 | PlayerControlled  | Set when the player controls this character. |
+| 3 | Ranged  | Marks the character as a ranged fighter. |
+| 10 | Flying  | The character flies, ignoring most ground movement costs. |
+| 100000 | Swimming  | The character can move through water. |
+| 100001 | Restrained  | The character is held in place and cannot move. |
 
 

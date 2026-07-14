@@ -6,7 +6,7 @@ tags:
 ---
 # TileMap : [[Any]]
 
-Description goes here.
+A TileMap is a whole combat map: a grid of [[Tile]]s of a set width and height, together with the entities placed on it and the spawn points where allies and enemies begin. It's loaded as a game asset, and each battle plays out on one TileMap.
 
 ## Static variables
 | Name | Type | Readonly | Note |
