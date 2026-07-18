@@ -36,6 +36,12 @@ A Character is a person in the game — a party member, an enemy, or an NPC. It 
 | [[Character#^removetrait-1254612727\|RemoveTrait()]] | [[Void]] | [[TraitType]] trait | Removes a trait from the character. |
 | [[Character#^hasstat1719545810\|HasStat()]] | [[Bool]] | [[StatType]] stat | True if the character has this stat. |
 | [[Character#^stat2125608822\|Stat()]] | [[Stat]] | [[StatType]] stat | Gets one of the character's stats. |
+| [[Character#^addstat71813794\|AddStat()]] | [[Stat]] | [[StatType]] stat, \[[[Int]] value\] | Gives the character a new stat. |
+| [[Character#^removestat228464214\|RemoveStat()]] | [[Bool]] | [[StatType]] stat | Takes a stat away, when allowed. |
+| [[Character#^hasresource-1109856447\|HasResource()]] | [[Bool]] | [[ResourceType]] type | True if the character has this resource pool. |
+| [[Character#^resource173890153\|Resource()]] | [[Resource]] | [[ResourceType]] type | Gets one of the character's resource pools. |
+| [[Character#^addresource-1769469334\|AddResource()]] | [[Resource]] | [[ResourceType]] type | Gives the character a new resource pool. |
+| [[Character#^removeresource-2027243859\|RemoveResource()]] | [[Bool]] | [[ResourceType]] type | Takes a resource pool away, when allowed. |
 | [[Character#^hasstatus913915793\|HasStatus()]] | [[Bool]] | [[String]] id | True if the character has this status effect. |
 | [[Character#^getstatus952185405\|GetStatus()]] | [[Status]] | [[String]] id | Finds a status effect on the character by id. |
 | [[Character#^addstatus608629884\|AddStatus()]] | [[Bool]] | [[Status]] status | Applies a status effect to the character. |
@@ -49,9 +55,6 @@ A Character is a person in the game — a party member, an enemy, or an NPC. It 
 | [[Character#^takedamage551244711\|TakeDamage()]] | [[Void]] | [[Int]] value, [[DamageType]] type, \[[[Bool]] pen\] | Deals a set amount of damage. |
 | [[Character#^healdamage-1787536189\|HealDamage()]] | [[Void]] | [[Int]] value | Heals the character. |
 | [[Character#^scaledvalue1828505233\|ScaledValue()]] | [[Int]] | [[StatType]] stat, [[Float]] multiplier | A stat value multiplied by an amount. |
-| [[Character#^restore2014170150\|Restore()]] | [[Void]] | [[String]] stat, [[Int]] value | Restores health or mana. |
-| [[Character#^getpercent-1964018478\|GetPercent()]] | [[Float]] | [[String]] stat | How full health or mana is (0 to 1). |
-| [[Character#^getresource169960115\|GetResource()]] | [[Int]] | [[String]] stat | Current health or mana amount. |
 
 
 
@@ -148,6 +151,85 @@ Gets one of the character's [[Stat]]s so you can read its value or change it.
 
 > [!Success]+ Return value
 > Returns the character's stat of that type.
+
+### AddStat ([[StatType]] stat, \[[[Int]] value\]) : [[Stat]]
+
+^addstat71813794
+
+Gives the character a new [[Stat]]. If they already have it, nothing changes and the existing stat is returned — a character's stats are never replaced. If one of the character's resources draws its maximum from this stat (like Stamina from Constitution), the two are linked up right away.
+
+> [!Abstract]+ Parameters
+> 1. `stat` The stat to give the character.
+> 2. `value` The starting base value. Leave it out (or pass 0) to use the stat's default.
+
+> [!Success]+ Return value
+> Returns the new stat, or the existing one if the character already had it.
+
+### RemoveStat ([[StatType]] stat) : [[Bool]]
+
+^removestat228464214
+
+Takes a stat away from the character. Essential stats (the ones every character must have) can't be removed, and neither can a stat that provides the maximum of one of the character's resources — remove that resource first.
+
+> [!Abstract]+ Parameters
+> 1. `stat` The stat to remove.
+
+> [!Success]+ Return value
+> Returns true if the stat was removed.
+
+### HasResource ([[ResourceType]] type) : [[Bool]]
+
+^hasresource-1109856447
+
+Checks whether the character has a resource pool of the given type. Every character has the essential pools (Health and Mana); extra ones like Stamina only exist if something added them.
+
+> [!Abstract]+ Parameters
+> 1. `type` The kind of resource to check for.
+
+> [!Success]+ Return value
+> Returns true if the character has that resource pool.
+
+### Resource ([[ResourceType]] type) : [[Resource]]
+
+^resource173890153
+
+Gets one of the character's [[Resource]] pools, so you can read how full it is or add to and take from it.
+
+> [!Example]+ Example
+> Only allow an ability while the character has more than 4 Health:
+> ```js
+> "canPerform": "c.Resource('Health').value > 4"
+> ```
+
+> [!Abstract]+ Parameters
+> 1. `type` Which resource pool to get.
+
+> [!Success]+ Return value
+> Returns the character's resource pool of that type.
+
+### AddResource ([[ResourceType]] type) : [[Resource]]
+
+^addresource-1769469334
+
+Gives the character a new [[Resource]] pool of the given type and fills it according to that type's settings. If they already have it, nothing changes and the existing pool is returned. When the pool draws its maximum from a stat the character doesn't have yet, that stat is added automatically at its default value.
+
+> [!Abstract]+ Parameters
+> 1. `type` The kind of resource pool to add.
+
+> [!Success]+ Return value
+> Returns the new resource pool, or the existing one if the character already had it.
+
+### RemoveResource ([[ResourceType]] type) : [[Bool]]
+
+^removeresource-2027243859
+
+Takes a resource pool away from the character. Essential pools such as Health and Mana can't be removed.
+
+> [!Abstract]+ Parameters
+> 1. `type` The resource pool to remove.
+
+> [!Success]+ Return value
+> Returns true if the resource pool was removed.
 
 ### HasStatus ([[String]] id) : [[Bool]]
 
@@ -337,56 +419,4 @@ Takes one of the character's stat values, multiplies it by the given amount, and
 
 > [!Success]+ Return value
 > Returns the scaled value, rounded down to a whole number.
-
-### Restore ([[String]] stat, [[Int]] value) : [[Void]]
-
-^restore2014170150
-
-Restores one of the character's resources by the given amount. The resource is named by text and is currently either `"Health"` or `"Mana"`.
-
-> [!Example]+ Example
-> Regenerate a resource each tick of a status:
-> ```js
-> "onTick": "c.Restore(stat, value);"
-> ```
-
-> [!Abstract]+ Parameters
-> 1. `stat` Which resource to restore: `"Health"` or `"Mana"`.
-> 2. `value` How much to restore.
-
-### GetPercent ([[String]] stat) : [[Float]]
-
-^getpercent-1964018478
-
-Gives how full a resource is as a fraction from 0.0 (empty) to 1.0 (full) — for example current health divided by maximum health. The resource is named by text, either `"Health"` or `"Mana"`.
-
-> [!Example]+ Example
-> Only let an ability target characters below a third health:
-> ```js
-> "canTarget": "t.c.GetPercent('Health') < 0.34"
-> ```
-
-> [!Abstract]+ Parameters
-> 1. `stat` Which resource to measure: `"Health"` or `"Mana"`.
-
-> [!Success]+ Return value
-> Returns how full the resource is, from 0.0 to 1.0.
-
-### GetResource ([[String]] stat) : [[Int]]
-
-^getresource169960115
-
-Gives the current amount of a resource — how much health or mana the character has right now. The resource is named by text, either `"Health"` or `"Mana"`.
-
-> [!Example]+ Example
-> Deal damage equal to the target's current health:
-> ```js
-> c.TakeDamage(c.GetResource("Health"), "Void", true);
-> ```
-
-> [!Abstract]+ Parameters
-> 1. `stat` Which resource to read: `"Health"` or `"Mana"`.
-
-> [!Success]+ Return value
-> Returns the current amount of that resource.
 

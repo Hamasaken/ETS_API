@@ -40,6 +40,7 @@ ETScript is a softly typed scripting language. Behind the scenes, all of the dat
 | 52 | [[EventAware]] | [[Any]]  |  |
 | 100 | [[Stat]] | [[Any]]  |  |
 | 101 | [[Flag]] | [[Any]]  |  |
+| 102 | [[Resource]] | [[Any]]  |  |
 | 200 | [[BaseAsset]] | [[Any]]  |  |
 | 210 | [[Character]] | [[BaseAsset]]  |  |
 | 211 | [[Item]] | [[EventAware]]  |  |
@@ -61,6 +62,7 @@ ETScript is a softly typed scripting language. Behind the scenes, all of the dat
 | 317 | [[FlagType]] | [[ClassEnum]]  |  |
 | 318 | [[TileType]] | [[ClassEnum]]  |  |
 | 319 | [[TeamType]] | [[ClassEnum]]  |  |
+| 320 | [[ResourceType]] | [[ClassEnum]]  |  |
 | 400 | [[Verse]] | [[Any]]  |  |
 | 401 | [[Line]] | [[Any]]  |  |
 | 500 | [[TileMap]] | [[Any]]  |  |

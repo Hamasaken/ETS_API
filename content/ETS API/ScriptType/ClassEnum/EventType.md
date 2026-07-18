@@ -24,7 +24,7 @@ t.AddStatus(s);
 ```
 
 > [!Hint]
-> By using [[EventData#^stop1407120757|EventData.Stop()]] within [[EventListener#^23570a|EventListener.Do()]], it is possible to interrupt a raised event before it has time to happen. For most (but not all) event types, this will prevent the event from taking place.
+> By using [[EventData#^stop-1406502445|EventData.Stop()]] within [[EventListener|EventListener.Do()]], it is possible to interrupt a raised event before it has time to happen. For most (but not all) event types, this will prevent the event from taking place.
 
 
 ## Enum values
@@ -45,6 +45,8 @@ t.AddStatus(s);
 | 19 | RemoveStatus  | Raised when a [[Status]] is about to be removed from a [[Character]]. If interrupted, it stays. |
 | 20 | AddTrait  | Raised when a [[Trait]] is about to be added to a [[Character]]. If interrupted, it isn't added. |
 | 21 | RemoveTrait  | Raised when a [[Trait]] is about to be removed from a [[Character]]. If interrupted, it stays. |
+| 22 | ResourceGain  |  |
+| 23 | ResourceLoss  |  |
 | 100 | ItemCanConsume  | Raised while checking whether an [[Item]] may be consumed. If interrupted, it can't. |
 | 101 | ItemCanUse  | Raised while checking whether an [[Item]] may be used. If interrupted, it can't. |
 | 102 | ItemCanEquip  | Raised while checking whether an [[Item]] may be equipped. If interrupted, it can't. |

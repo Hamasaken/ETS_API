@@ -18,7 +18,7 @@ An Ability is an action a [[Character]] can take in combat — an attack, a spel
 | ---- | ---- | -------- | ---- |
 | description | [[String]] | False | The ability's description text shown to the player. |
 | cooldown | [[Int]] | False | Turns that must pass before it can be used again. |
-| isReady | [[Int]] | True | True when the ability is off cooldown and usable. |
+| isReady | [[Bool]] | True | True when the ability is off cooldown and usable. |
 
 ## Script variables
 | Name | Type | Readonly | Note |
