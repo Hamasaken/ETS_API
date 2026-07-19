@@ -45,8 +45,8 @@ t.AddStatus(s);
 | 19 | RemoveStatus  | Raised when a [[Status]] is about to be removed from a [[Character]]. If interrupted, it stays. |
 | 20 | AddTrait  | Raised when a [[Trait]] is about to be added to a [[Character]]. If interrupted, it isn't added. |
 | 21 | RemoveTrait  | Raised when a [[Trait]] is about to be removed from a [[Character]]. If interrupted, it stays. |
-| 22 | ResourceGain  |  |
-| 23 | ResourceLoss  |  |
+| 22 | ResourceGain  | Raised after a [[Character]] gains points in a [[Resource]] such as Health or Mana. Carries the character, the resource's name and the amount gained. |
+| 23 | ResourceLoss  | Raised after a [[Character]] loses points in a [[Resource]]. The loss itself is not undone by stopping the event, but later listeners are prevented from reacting — including death, which happens through this event when Health runs out. |
 | 100 | ItemCanConsume  | Raised while checking whether an [[Item]] may be consumed. If interrupted, it can't. |
 | 101 | ItemCanUse  | Raised while checking whether an [[Item]] may be used. If interrupted, it can't. |
 | 102 | ItemCanEquip  | Raised while checking whether an [[Item]] may be equipped. If interrupted, it can't. |

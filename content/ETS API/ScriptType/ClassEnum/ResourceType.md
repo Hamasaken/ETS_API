@@ -12,8 +12,8 @@ A ResourceType describes a kind of [[Resource]] pool and how it behaves: where i
 ## Enum values
 | Id     | Name    | Maximum          | Scales with max | Colors           | Description |
 | ------ | ------- | ---------------- | --------------- | ---------------- | ----------- |
-| 0 | Health | Health * 1 | True | \#74140B, \#74140B  | The character's life; emptying it kills them. |
-| 1 | Mana | Mana * 1 | True | \#192C5B, \#192C5B  | Spent to power abilities. |
+| 0 | Health | Health * 1 | True | 74140B, 74140B  | The character's life; emptying it kills them. |
+| 1 | Mana | Mana * 1 | True | 192C5B, 192C5B  | Spent to power abilities. |
 | 9999 | Debug | Debug * 1 | True |   | For testing only. |
 | 100000 | Stamina | Constitution * 2 | True |   | Defined in the `.resources` asset file; caps at twice Constitution. |
 | 100001 | Shield | 30 | True |   | Defined in the `.resources` asset file; fixed cap of 30, starts empty. |
